@@ -4,7 +4,7 @@ import styles from "./page.module.scss";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.wrapper}>
+      <div className="container">
         <div className={styles.header__container}>
           <div className={`${styles.header__logo} ${styles.logo}`}>Logo</div>
 

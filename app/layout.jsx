@@ -2,7 +2,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./header/page";
 import { Montserrat } from "next/font/google";
-import Hero from "./hero/page";
 
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic"],
@@ -18,9 +17,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserrat.className} `}>
-        <div className="container">
+        <div>
           <Header />
-          <Hero />
           {children}
         </div>
       </body>

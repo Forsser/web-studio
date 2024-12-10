@@ -2,12 +2,18 @@
 :root {
   --background: #f7f9f1;
   --foreground: #1f1f1f;
+
+  --background-about: #f7f9f1;
+  --foreground-about: #1f1f1f;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #f7f9f1;
     --foreground: #1f1f1f;
+
+    --background-about: #f7f9f1;
+    --foreground-about: #1f1f1f;
   }
 }
 
@@ -44,6 +50,7 @@ a {
 }
 
 .container {
-  width: 95%;
+  width: 100%;
   margin: 0px auto;
+  padding: 2rem 4rem;
 }
