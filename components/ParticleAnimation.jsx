@@ -38,7 +38,7 @@ export default function ParticlesBckg() {
               mode: "push",
             },
             onHover: {
-              enable: false,
+              enable: true,
               mode: "repulse",
             },
             resize: true,
@@ -48,7 +48,7 @@ export default function ParticlesBckg() {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },
