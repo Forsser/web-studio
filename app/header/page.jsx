@@ -6,11 +6,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.wrapper}>
         <div className={styles.header__container}>
-          <div className={`${styles.header__logo} ${styles.logo}`}>
-            {/*             <img src="#" alt="Company Logo" className={styles.logo__image} />
-             */}{" "}
-            Logo
-          </div>
+          <div className={`${styles.header__logo} ${styles.logo}`}>Logo</div>
 
           <nav className={`${styles.header__navigation} ${styles.navigation}`}>
             <ul className={styles.navigation__list}>
@@ -42,12 +38,6 @@ export default function Header() {
               <span className={styles.contacts__phone}>
                 +38 (000) 000-00-00
               </span>
-              {/*  <a
-                href="mailto:email@example.com"
-                className={styles.contacts__email}
-              >
-                email@example.com
-              </a> */}
             </div>
           </div>
         </div>
