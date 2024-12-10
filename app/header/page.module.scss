@@ -1,0 +1,24 @@
+.header {
+  position: relative;
+  margin-top: 3rem;
+  z-index: 2;
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  font-size: 2rem;
+  justify-content: space-between;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  gap: 6.5rem;
+}
+.navigation__item {
+}
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
