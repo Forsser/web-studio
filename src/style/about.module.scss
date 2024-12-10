@@ -2,9 +2,10 @@
   position: relative;
   width: 100%;
   margin-top: 20rem;
+  padding: 8rem 0;
   z-index: 2;
   overflow: hidden;
-  background: #181212;
+  background: #000000;
 
   &__title {
     text-transform: uppercase;
@@ -27,7 +28,8 @@
     width: 45%;
     padding: 1rem;
     font-size: 2rem;
-    background: #212529;
+    background: hsla(0, 0%, 4%, 1);
+    border: 1px solid #404040;
     border-radius: 1.5rem;
   }
 }
@@ -36,8 +38,11 @@
   position: relative;
   display: flex;
   gap: 2rem;
+  color: #f9f9f9b5;
+  font-size: 1.7rem;
 }
 .item__title {
+  font-family: sans-serif;
   font-weight: bold;
   margin-bottom: 2rem;
   color: #fefefe;
@@ -46,10 +51,37 @@
   border-radius: 1.5rem;
   padding: 1rem;
 }
-.svg {
+
+.light {
   position: absolute;
-  top: -1rem;
-  left: -7rem;
-  width: 60px;
-  height: 60px;
+  top: 50%; /* Центруємо світло по вертикалі */
+  left: 50%; /* Центруємо світло по горизонталі */
+  width: 400px; /* Ширина світла */
+  height: 400px; /* Висота світла */
+  background: radial-gradient(
+    circle,
+    #ffffffcc 0%,
+    rgba(255, 255, 255, 0.303) 70%
+  ); /* Світло з центром */
+  border-radius: 50%; /* Округлені краї для ефекту світла */
+  transform: translate(-50%, -50%); /* Центруємо елемент */
+  pointer-events: none; /* Не впливає на взаємодію з іншими елементами */
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.732); /* Розсіяний ефект світла */
+  animation: pulse 6s infinite; /* Додаємо анімацію для ефекту пульсації */
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.4;
+  }
 }
