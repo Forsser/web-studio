@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./page.module.scss";
 
 export default function Header() {
@@ -14,24 +15,24 @@ export default function Header() {
           <nav className={`${styles.header__navigation} ${styles.navigation}`}>
             <ul className={styles.navigation__list}>
               <li className={styles.navigation__item}>
-                <a href="/" className={styles.navigation__link}>
+                <Link href="/" className={styles.navigation__link}>
                   Портфоліо
-                </a>
+                </Link>
               </li>
               <li className={styles.navigation__item}>
-                <a href="/about" className={styles.navigation__link}>
+                <Link href="/about" className={styles.navigation__link}>
                   Послуги
-                </a>
+                </Link>
               </li>
               <li className={styles.navigation__item}>
-                <a href="/services" className={styles.navigation__link}>
+                <Link href="/services" className={styles.navigation__link}>
                   Про нас
-                </a>
+                </Link>
               </li>
               <li className={styles.navigation__item}>
-                <a href="/portfolio" className={styles.navigation__link}>
+                <Link href="/portfolio" className={styles.navigation__link}>
                   Контакти
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
