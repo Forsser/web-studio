@@ -1,5 +1,6 @@
 import style from "@/src/style/about.module.scss";
 import Svg from "@/public/icons/smile.svg";
+import Specialization from "@/components/Specialization";
 
 export default function About() {
   return (
@@ -60,6 +61,7 @@ export default function About() {
             </div>
           </li>
         </ul>
+        <Specialization />
       </div>
     </section>
   );
