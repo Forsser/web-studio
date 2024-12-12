@@ -1,3 +1,72 @@
 .specialization {
-  margin-top: 10rem;
+  position: relative;
+  background: #000000;
+}
+
+.specialization__container {
+  position: relative; /* Батьківський елемент для Sticky */
+  /* Достатня висота для прокрутки */
+}
+
+.specialization__title {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.specialization__list {
+  height: 100%;
+  margin: 0px auto;
+}
+
+.specialization__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 60%;
+  position: sticky;
+  top: 1rem; /* Sticky на початку контейнера */
+  z-index: 1; /* Щоб перекривати інші елементи */
+
+  padding: 5rem;
+  margin-bottom: 4rem;
+
+  border-radius: 1.5rem;
+
+  transition: transform 0.3s ease, z-index 0.3s ease;
+
+  h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+/* Зсув кожного елемента при "залипанні" */
+.item1 {
+  top: 0;
+  background: #6384e7;
+}
+.item2 {
+  top: 4rem; /* Висота елемента 1 + відступ */
+  background: #88f786;
+}
+.item3 {
+  top: 8rem; /* Висота елемента 2 + відступ */
+
+  background: #7dcba8;
+}
+.item4 {
+  top: 12rem; /* Висота елемента 3 + відступ */
+  background: #f3f6ff;
+}
+
+.item__img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  overflow: hidden;
 }

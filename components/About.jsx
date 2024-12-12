@@ -61,7 +61,6 @@ export default function About() {
             </div>
           </li>
         </ul>
-        <Specialization />
       </div>
     </section>
   );
