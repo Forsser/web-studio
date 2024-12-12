@@ -3,11 +3,6 @@
   background: #000000;
 }
 
-.specialization__container {
-  position: relative; /* Батьківський елемент для Sticky */
-  /* Достатня висота для прокрутки */
-}
-
 .specialization__title {
   text-transform: uppercase;
   font-size: 5rem;
@@ -17,25 +12,26 @@
 }
 
 .specialization__list {
+  display: flex;
+  flex-direction: row;
+
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
   height: 100%;
-  margin: 0px auto;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .specialization__item {
   display: flex;
   flex-direction: column;
-  margin: 0px auto;
-  width: 60%;
-  position: sticky;
-  top: 1rem; /* Sticky на початку контейнера */
-  z-index: 1; /* Щоб перекривати інші елементи */
 
-  padding: 5rem;
-  margin-bottom: 4rem;
+  width: 40%;
+  height: 100%;
 
   border-radius: 1.5rem;
-
-  transition: transform 0.3s ease, z-index 0.3s ease;
 
   h4 {
     font-size: 2.5rem;
@@ -45,17 +41,44 @@
   }
 }
 
-/* Зсув кожного елемента при "залипанні" */
-.item1 {
-  top: 0;
+.item__text {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  button {
+    position: absolute;
+    bottom: -7rem;
+    right: 1rem;
+    padding: 1rem;
+    border: 1px solid #000000;
+    background: #000000df;
+    color: #8e8e8e;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    transition: all 0.2s linear;
+
+    &:hover {
+      cursor: pointer;
+      background: #f8f8f8;
+      color: #000000;
+    }
+  }
+}
+
+/* Зсув кожного елемента при "залипанні"  Зсув кожного елемента при "залипанні"*/
+
+/* .item1 {
+  top: 5rem;
   background: #6384e7;
 }
 .item2 {
-  top: 4rem; /* Висота елемента 1 + відступ */
+  top: 8rem; 
   background: #272827;
 }
 .item3 {
-  top: 8rem; /* Висота елемента 2 + відступ */
+  top: 11rem; 
 
   background: #f3f6ff;
   h4 {
@@ -63,16 +86,16 @@
   }
 }
 .item4 {
-  top: 12rem; /* Висота елемента 3 + відступ */
+  top: 14rem; 
   h4 {
     color: #000000;
   }
-  background: #c4f22c;
-}
+  background: #a0fcf3;
+}  */
 
 .item__img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 1.5rem;
   overflow: hidden;
 }

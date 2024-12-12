@@ -13,13 +13,10 @@ export default function Specialization() {
         <div className={style.specialization__container}>
           <ul className={style.specialization__list}>
             <li className={`${style.specialization__item} ${style.item1}`}>
-              <h4>Сайт візитка</h4>
               <div className={style.item__container}>
                 <p className={style.item__text}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Eaque natus commodi recusandae rem aperiam corporis incidunt,
-                  obcaecati rerum, nobis quibusdam minima, voluptatibus
-                  accusamus aspernatur iste fuga velit facilis enim aut?
+                  <h4>Сайт візитка</h4>
+                  <button>ДЕТАЛЬНІШЕ</button>
                 </p>
                 <div className={style.item__img}>
                   <img className="" src={landing.src} />
@@ -27,13 +24,10 @@ export default function Specialization() {
               </div>
             </li>
             <li className={`${style.specialization__item} ${style.item2}`}>
-              <h4>Сайт портфоліо</h4>
               <div className={style.item__container}>
                 <div className={style.item__text}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Eaque natus commodi recusandae rem aperiam corporis incidunt,
-                  obcaecati rerum, nobis quibusdam minima, voluptatibus
-                  accusamus aspernatur iste fuga velit facilis enim aut?
+                  <h4>Сайт портфоліо</h4>
+                  <button>ДЕТАЛЬНІШЕ</button>
                 </div>
                 <div className={style.item__img}>
                   <img className="" src={portfolio.src} />
@@ -41,13 +35,10 @@ export default function Specialization() {
               </div>
             </li>
             <li className={`${style.specialization__item} ${style.item3}`}>
-              <h4>Корпоративний сайт</h4>
               <div className={style.item__container}>
                 <div className={style.item__text}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Eaque natus commodi recusandae rem aperiam corporis incidunt,
-                  obcaecati rerum, nobis quibusdam minima, voluptatibus
-                  accusamus aspernatur iste fuga velit facilis enim aut?
+                  <h4>Корпоративний сайт</h4>
+                  <button>ДЕТАЛЬНІШЕ</button>
                 </div>
                 <div className={style.item__img}>
                   <img className="" src={campaign.src} />
@@ -55,13 +46,10 @@ export default function Specialization() {
               </div>
             </li>
             <li className={`${style.specialization__item} ${style.item4}`}>
-              <h4>Інтернет магазин</h4>
               <div className={style.item__container}>
                 <div className={style.item__text}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Eaque natus commodi recusandae rem aperiam corporis incidunt,
-                  obcaecati rerum, nobis quibusdam minima, voluptatibus
-                  accusamus aspernatur iste fuga velit facilis enim aut?
+                  <h4>Інтернет магазин</h4>
+                  <button>ДЕТАЛЬНІШЕ</button>
                 </div>
                 <div className={style.item__img}>
                   <img className="" src={shop.src} />
