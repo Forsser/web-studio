@@ -1,6 +1,8 @@
 import style from "@/src/style/specialization.module.scss";
 import landing from "@/src/landing.jpg";
 import portfolio from "@/src/portfolio.jpg";
+import campaign from "@/src/campaign.jpg";
+import shop from "@/src/shop.jpg";
 
 export default function Specialization() {
   return (
@@ -39,7 +41,7 @@ export default function Specialization() {
               </div>
             </li>
             <li className={`${style.specialization__item} ${style.item3}`}>
-              <h4>Сайт візитка</h4>
+              <h4>Корпоративний сайт</h4>
               <div className={style.item__container}>
                 <div className={style.item__text}>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -48,12 +50,12 @@ export default function Specialization() {
                   accusamus aspernatur iste fuga velit facilis enim aut?
                 </div>
                 <div className={style.item__img}>
-                  <img className="" src={portfolio.src} />
+                  <img className="" src={campaign.src} />
                 </div>
               </div>
             </li>
             <li className={`${style.specialization__item} ${style.item4}`}>
-              <h4>Сайт візитка</h4>
+              <h4>Інтернет магазин</h4>
               <div className={style.item__container}>
                 <div className={style.item__text}>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -62,7 +64,7 @@ export default function Specialization() {
                   accusamus aspernatur iste fuga velit facilis enim aut?
                 </div>
                 <div className={style.item__img}>
-                  <img className="" src={portfolio.src} />
+                  <img className="" src={shop.src} />
                 </div>
               </div>
             </li>

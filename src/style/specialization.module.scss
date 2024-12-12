@@ -52,16 +52,22 @@
 }
 .item2 {
   top: 4rem; /* Висота елемента 1 + відступ */
-  background: #88f786;
+  background: #272827;
 }
 .item3 {
   top: 8rem; /* Висота елемента 2 + відступ */
 
-  background: #7dcba8;
+  background: #f3f6ff;
+  h4 {
+    color: #000000;
+  }
 }
 .item4 {
   top: 12rem; /* Висота елемента 3 + відступ */
-  background: #f3f6ff;
+  h4 {
+    color: #000000;
+  }
+  background: #c4f22c;
 }
 
 .item__img {
