@@ -1,6 +1,7 @@
 import style from "../src/style/hero.module.scss";
 import ParticleAnimation from "@/components/ParticleAnimation";
 import Smile from "@/public/icons/smile.svg";
+import { toast } from "sonner";
 
 export default function Hero() {
   return (

@@ -1,21 +1,23 @@
 .specialization {
   position: relative;
   background: #000000;
+  padding: 0 0 8rem 0;
 }
 
 .specialization__title {
   text-transform: uppercase;
-  font-size: 5rem;
+
   font-weight: bold;
   color: #fff;
   margin-bottom: 4rem;
+
+  font-size: 5rem;
 }
 
 .specialization__list {
   display: flex;
   flex-direction: row;
 
-  flex-grow: 1;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -27,11 +29,8 @@
 .specialization__item {
   display: flex;
   flex-direction: column;
-
   width: 40%;
-  height: 100%;
-
-  border-radius: 1.5rem;
+  min-height: 100%;
 
   h4 {
     font-size: 2.5rem;
@@ -44,7 +43,7 @@
 .item__text {
   position: relative;
   display: flex;
-  justify-content: space-between;
+
   margin-bottom: 2rem;
 
   button {
@@ -65,6 +64,13 @@
       color: #000000;
     }
   }
+}
+
+.item__img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.5rem;
 }
 
 /* Зсув кожного елемента при "залипанні"  Зсув кожного елемента при "залипанні"*/
@@ -92,10 +98,3 @@
   }
   background: #a0fcf3;
 }  */
-
-.item__img {
-  width: 100%;
-  height: 100%;
-  border-radius: 1.5rem;
-  overflow: hidden;
-}

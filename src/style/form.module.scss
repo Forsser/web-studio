@@ -1,0 +1,41 @@
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  &__container {
+    display: flex;
+    width: 60%;
+    gap: 5rem;
+    justify-content: space-evenly;
+  }
+
+  &__input {
+    padding: 2rem;
+    font-size: 1.5rem;
+    width: 30%;
+    color: #fff;
+
+    border-bottom: 1px solid #525252;
+
+    &:focus {
+      outline: none; /* Прибирає білу рамку */
+
+      box-shadow: none; /* Вимикає тінь */
+    }
+  }
+
+  &__button {
+    padding: 2rem;
+    background: #f86464;
+    color: #fff;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 25%;
+    border-radius: 1.5rem;
+    cursor: pointer;
+  }
+}

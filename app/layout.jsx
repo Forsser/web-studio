@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./header/page";
 import { Montserrat } from "next/font/google";
+import { Toaster } from "sonner";
 
 const montserrat = Montserrat({
   subsets: ["latin", "cyrillic"],
@@ -18,6 +19,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${montserrat.className} `}>
         <div>
+          <Toaster
+            position="bottom-right"
+            toastOptions={{
+              style: {
+                maxWidth: "50rem",
+                width: "100%",
+                height: "5rem",
+                fontSize: "1.5rem",
+              }, // Налаштовуємо ширину
+            }}
+          />
           <Header />
           {children}
         </div>

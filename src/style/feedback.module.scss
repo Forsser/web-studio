@@ -1,0 +1,15 @@
+.feedback {
+  position: relative;
+  background: #000;
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 5rem;
+  }
+}

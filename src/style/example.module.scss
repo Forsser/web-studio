@@ -1,0 +1,108 @@
+.example {
+  position: relative;
+  backdrop-filter: blur(0.4rem);
+  height: 100%;
+
+  &__title {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5rem;
+  }
+
+  &__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: #ffffff;
+    padding: 2rem;
+  }
+
+  &__card {
+    position: relative;
+    width: 32%;
+    height: auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    &:hover .card__img__wrapper::before {
+      background: #00000000;
+      backdrop-filter: blur(0);
+    }
+
+    &:hover .card__name {
+      transition: all 0.2s linear;
+      opacity: 0;
+    }
+  }
+}
+
+.card__info {
+  position: absolute;
+  bottom: 3rem;
+
+  width: 100%;
+
+  padding: 0px 2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4rem;
+  z-index: 3;
+}
+
+.card__link {
+  display: inline-block;
+  background: #000;
+  border-radius: 1.5rem;
+  transition: all 0.2s linear;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  a {
+    padding: 1.5rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: #000000;
+
+    background: #ffffff;
+  }
+}
+
+.card__img__wrapper {
+  position: relative;
+  display: flex;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000003b;
+    backdrop-filter: blur(0.4rem);
+    z-index: 2;
+    transition: background 0.2s ease, backdrop-filter 0.2s ease; // плавний ефект
+  }
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}

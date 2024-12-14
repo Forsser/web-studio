@@ -1,8 +1,9 @@
 import style from "@/src/style/specialization.module.scss";
-import landing from "@/src/landing.jpg";
-import portfolio from "@/src/portfolio.jpg";
-import campaign from "@/src/campaign.jpg";
-import shop from "@/src/shop.jpg";
+import landing from "@/src/img/landing.jpg";
+import portfolio from "@/src/img/portfolio.jpg";
+import campaign from "@/src/img/campaign.jpg";
+import shop from "@/src/img/shop.jpg";
+import postman from "@/src/img/postman.jpg";
 
 export default function Specialization() {
   return (
@@ -14,10 +15,10 @@ export default function Specialization() {
           <ul className={style.specialization__list}>
             <li className={`${style.specialization__item} ${style.item1}`}>
               <div className={style.item__container}>
-                <p className={style.item__text}>
+                <div className={style.item__text}>
                   <h4>Сайт візитка</h4>
                   <button>ДЕТАЛЬНІШЕ</button>
-                </p>
+                </div>
                 <div className={style.item__img}>
                   <img className="" src={landing.src} />
                 </div>
@@ -41,7 +42,7 @@ export default function Specialization() {
                   <button>ДЕТАЛЬНІШЕ</button>
                 </div>
                 <div className={style.item__img}>
-                  <img className="" src={campaign.src} />
+                  <img className={style.campaign__img} src={campaign.src} />
                 </div>
               </div>
             </li>
