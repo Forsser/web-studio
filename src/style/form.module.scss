@@ -37,5 +37,11 @@
     width: 25%;
     border-radius: 1.5rem;
     cursor: pointer;
+
+    transition: background 0.1s linear;
+
+    &:hover {
+      background: #f86464b7;
+    }
   }
 }
