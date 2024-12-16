@@ -3,6 +3,8 @@ import About from "@/components/About";
 import Specialization from "@/components/Specialization";
 import Example from "@/components/Example";
 import Feedback from "@/components/Feedback";
+import Problem from "@/components/Problem";
+import Review from "@/components/Review";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <Specialization />
       <Example />
       <Feedback />
+      <Problem />
+      <Review />
     </>
   );
 }

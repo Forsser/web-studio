@@ -1,0 +1,42 @@
+.slider {
+  position: relative;
+  width: 100%;
+  padding: 4rem 0;
+  background: #161515;
+
+  &__title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+}
+
+.swiperContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.slide.swiper-slide-active img {
+  transform: scale(1.1); /* Ефект для центрального слайду */
+}

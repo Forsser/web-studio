@@ -7,6 +7,7 @@
   &__container {
     display: flex;
     width: 60%;
+    height: 2rem;
     gap: 5rem;
     justify-content: space-evenly;
   }
@@ -27,8 +28,12 @@
   }
 
   &__button {
-    padding: 2rem;
-    background: #f86464;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1rem;
+    background: #69f864b7;
     color: #fff;
 
     text-transform: uppercase;
@@ -41,7 +46,7 @@
     transition: background 0.1s linear;
 
     &:hover {
-      background: #f86464b7;
+      background: #64f866;
     }
   }
 }
