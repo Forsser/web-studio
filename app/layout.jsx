@@ -25,8 +25,9 @@ export default function RootLayout({ children }) {
               style: {
                 maxWidth: "50rem",
                 width: "100%",
-                height: "5rem",
-                fontSize: "1.5rem",
+                height: "8rem",
+                fontSize: "2rem",
+                padding: "2rem",
               }, // Налаштовуємо ширину
             }}
           />

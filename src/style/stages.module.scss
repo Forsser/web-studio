@@ -1,0 +1,110 @@
+.steps {
+  position: relative;
+  background: #ffffff;
+  height: 100%;
+  padding-bottom: 5rem;
+
+  &__title {
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5rem;
+  }
+}
+
+.stepsContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+}
+
+.step {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+}
+
+.number {
+  font-size: 20rem;
+  color: rgba(216, 216, 216, 0.756); /* Велика цифра фону */
+  font-weight: bold;
+  line-height: 1;
+  position: absolute;
+  top: -7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.content {
+  padding: 0.5rem;
+  z-index: 2;
+  background: #ffffff;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    z-index: 2;
+  }
+}
+
+/* Лінія між етапами */
+.line {
+  position: absolute;
+
+  top: 50%;
+  left: 5rem;
+  width: 90%;
+  height: 0.1rem;
+  background-color: #e4f455c1;
+  z-index: 1;
+}
+
+.line .pulse {
+  position: absolute;
+  top: -0.8rem;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+
+  background-color: #e7fd5b;
+  box-shadow: 0px 0px 61px 21px rgb(238, 255, 56);
+  border-radius: 50%;
+  animation: pulseLine 7s linear infinite;
+}
+
+@keyframes pulseLine {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(80vw - 2rem)); /* Рух до кінця лінії */
+    opacity: 1;
+  }
+}
+
+/* Відсутність лінії після останнього етапу */
+.step:last-child .line {
+  display: none;
+}

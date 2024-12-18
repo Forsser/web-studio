@@ -5,6 +5,9 @@ import Example from "@/components/Example";
 import Feedback from "@/components/Feedback";
 import Problem from "@/components/Problem";
 import Review from "@/components/Review";
+import ApplicationForm from "@/components/ApplicationForm";
+import Steps from "@/components/Steps";
+import Team from "@/components/Team";
 
 export default function Home() {
   return (
@@ -16,6 +19,9 @@ export default function Home() {
       <Feedback />
       <Problem />
       <Review />
+      <ApplicationForm />
+      <Steps />
+      <Team />
     </>
   );
 }

@@ -1,0 +1,47 @@
+.team {
+  position: relative;
+  background: #ffffff;
+
+  &__title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5rem;
+  }
+
+  &__subtext {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    font-size: 2rem;
+    width: 50%;
+    margin: 5rem auto;
+  }
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.item {
+  padding: 1rem;
+  width: 25%;
+  border-radius: 1rem;
+
+  overflow: hidden;
+
+  &__name {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &__position {
+    font-size: 1.5rem;
+    color: #5b5b5b;
+  }
+}

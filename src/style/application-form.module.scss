@@ -1,0 +1,101 @@
+.aplication {
+  position: relative;
+  background: #000;
+  height: 100%;
+  font-size: 2rem;
+  padding-bottom: 5rem;
+
+  &__title {
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    margin: 3rem 0;
+    color: #ffffff;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
+.form__container {
+  background: #080808;
+  color: #ffffff;
+  width: 70%;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.form {
+  min-height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  &__title {
+    padding: 1rem;
+    font-weight: bold;
+    border-bottom: solid 1px #2e2e2e;
+  }
+  &__input {
+    display: flex;
+    flex-direction: column;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    input {
+      margin: 1rem;
+      padding: 0.5rem;
+      width: 60%;
+      border-radius: 0.5rem;
+      background: #1d1d1d;
+
+      &:focus {
+        outline: none; /* Прибирає білу рамку */
+
+        box-shadow: none; /* Вимикає тінь */
+      }
+    }
+  }
+
+  &__button {
+    width: 20%;
+    border: 1px solid #2a2a2a;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+}
+
+.input {
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 60%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1px solid #9b9b9b00;
+
+  &:hover {
+    border: 1px solid #262626;
+  }
+}
+.input__check {
+  background: #1f1f1f;
+  border: 1px solid #2a2a2a;
+
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 60%;
+  border-radius: 0.5rem;
+}
+.input__error {
+  border: 1px solid red;
+  background-color: #ffe6e6;
+}
