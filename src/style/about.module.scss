@@ -57,8 +57,8 @@
   position: absolute;
   top: 50%; /* Центруємо світло по вертикалі */
   left: 50%; /* Центруємо світло по горизонталі */
-  width: 400px; /* Ширина світла */
-  height: 400px; /* Висота світла */
+  width: 40rem; /* Ширина світла */
+  height: 40rem; /* Висота світла */
   background: radial-gradient(
     circle,
     #ffffffcc 0%,
@@ -109,8 +109,8 @@
   }
 
   .light {
-    width: 300px;
-    height: 300px;
+    width: 50vw; /* Більше світло на маленьких екранах */
+    height: 50vw;
   }
 }
 
@@ -132,8 +132,8 @@
   }
 
   .light {
-    width: 200px;
-    height: 200px;
+    width: 50vw; /* Більше світло на маленьких екранах */
+    height: 50vw;
   }
 }
 
@@ -181,8 +181,8 @@
   }
 
   .light {
-    width: 300px;
-    height: 300px;
+    width: 50vw; /* Більше світло на маленьких екранах */
+    height: 50vw;
   }
 }
 
@@ -204,8 +204,8 @@
   }
 
   .light {
-    width: 200px;
-    height: 200px;
+    width: 70vw; /* Більше світло на маленьких екранах */
+    height: 70vw;
   }
 }
 
@@ -219,14 +219,16 @@
   .about__title {
     font-size: 2.5rem;
     margin-left: 0.5rem;
+    margin-bottom: 3rem;
   }
 
   .about__list {
     padding: 1rem;
+    gap: 1.5rem;
   }
 
   .light {
-    width: 150px;
-    height: 150px;
+    width: 90vw; /* Більше світло на маленьких екранах */
+    height: 90vw;
   }
 }

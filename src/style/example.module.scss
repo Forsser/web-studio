@@ -30,7 +30,7 @@
   &__card {
     position: relative;
     width: 32%;
-    height: auto;
+    height: 18vw;
     border-radius: 1.5rem;
     overflow: hidden;
 
@@ -124,6 +124,7 @@
 
   .example__card {
     width: 48%;
+    height: 20vw;
   }
 
   .card__info {
@@ -153,6 +154,7 @@
 
   .example__card {
     width: 100%;
+    height: 30rem;
   }
 
   .card__info {
@@ -176,10 +178,13 @@
   }
 
   .example__container {
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 0.5rem;
   }
-
+  .example__card {
+    width: 100%;
+    height: 20rem;
+  }
   .card__info {
     font-size: 2rem;
     bottom: 1rem;
