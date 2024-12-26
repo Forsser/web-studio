@@ -3,6 +3,7 @@
   margin-top: 3rem;
   z-index: 2;
 }
+
 .header__container {
   display: flex;
   flex-direction: row;
@@ -10,15 +11,70 @@
   font-size: 2rem;
   justify-content: space-between;
 }
+
 .navigation__list {
   display: flex;
   flex-direction: row;
   gap: 6.5rem;
 }
+
 .navigation__item {
 }
+
 .contacts__info {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+
+/* Для планшетів (екрани до 1024px) */
+@media (max-width: 1024px) {
+  .header__container {
+    flex-direction: column; /* Перехід на стовпчик */
+    align-items: center;
+    font-size: 1.8rem; /* Зменшення розміру шрифтів */
+  }
+
+  .navigation__list {
+    flex-direction: column; /* Елементи навігації в стовпчик */
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .contacts__info {
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+/* Для мобільних пристроїв (екрани до 768px) */
+@media (max-width: 768px) {
+  .header__container {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+  }
+
+  .navigation__list {
+    gap: 2rem;
+  }
+
+  .contacts__info {
+    gap: 1.5rem;
+  }
+}
+
+/* Для дуже маленьких екранів (екрани до 480px) */
+@media (max-width: 480px) {
+  .header__container {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  .navigation__list {
+    gap: 1.5rem;
+  }
+
+  .contacts__info {
+    gap: 1rem;
+  }
 }

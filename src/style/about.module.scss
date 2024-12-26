@@ -86,3 +86,147 @@
     opacity: 0.2;
   }
 }
+
+/* Для планшетів (екрани до 1024px) */
+@media (max-width: 1024px) {
+  .about {
+    margin-top: 10rem;
+    padding: 6rem 0;
+  }
+
+  .about__title {
+    font-size: 4rem;
+    margin-left: 1rem;
+  }
+
+  .about__list {
+    padding: 3rem 10rem;
+    gap: 1.5rem;
+  }
+
+  .about__item {
+    width: 100%; /* Займає всю ширину */
+  }
+
+  .light {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Для мобільних пристроїв (екрани до 768px) */
+@media (max-width: 768px) {
+  .about {
+    margin-top: 8rem;
+    padding: 4rem 0;
+  }
+
+  .about__title {
+    font-size: 3.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .about__list {
+    padding: 2rem 2rem;
+    gap: 1rem;
+  }
+
+  .light {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Для дуже маленьких екранів (екрани до 480px) */
+@media (max-width: 480px) {
+  .about {
+    margin-top: 5rem;
+    padding: 3rem 0;
+  }
+
+  .about__title {
+    font-size: 2.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .about__list {
+    padding: 1rem;
+  }
+
+  .light {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Для планшетів (екрани до 1024px) */
+@media (max-width: 1024px) {
+  .about {
+    margin-top: 10rem;
+    padding: 6rem 0;
+  }
+
+  .about__title {
+    font-size: 4rem;
+    margin-left: 1rem;
+  }
+
+  .about__list {
+    padding: 3rem 10rem;
+    gap: 1.5rem;
+  }
+
+  .about__item {
+    width: 100%;
+  }
+
+  .light {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Для мобільних пристроїв (екрани до 768px) */
+@media (max-width: 768px) {
+  .about {
+    margin-top: 8rem;
+    padding: 4rem 0;
+  }
+
+  .about__title {
+    font-size: 3.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .about__list {
+    padding: 2rem 2rem;
+    gap: 1rem;
+  }
+
+  .light {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Для дуже маленьких екранів (екрани до 480px) */
+@media (max-width: 480px) {
+  .about {
+    margin-top: 5rem;
+    padding: 3rem 0;
+  }
+
+  .about__title {
+    font-size: 2.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .about__list {
+    padding: 1rem;
+  }
+
+  .light {
+    width: 150px;
+    height: 150px;
+  }
+}

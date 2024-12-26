@@ -107,3 +107,86 @@
   object-fit: cover;
   z-index: 1;
 }
+
+/* Для планшетів (екрани до 1024px) */
+@media (max-width: 1024px) {
+  .example__title {
+    font-size: 4rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .example__container {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .example__card {
+    width: 48%;
+  }
+
+  .card__info {
+    font-size: 3rem;
+    bottom: 2rem;
+  }
+
+  .card__link {
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+  }
+}
+
+/* Для мобільних пристроїв (екрани до 768px) */
+@media (max-width: 768px) {
+  .example__title {
+    font-size: 3rem;
+    margin-left: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .example__container {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .example__card {
+    width: 100%;
+  }
+
+  .card__info {
+    font-size: 2.5rem;
+    bottom: 1.5rem;
+  }
+
+  .card__link {
+    font-size: 1rem;
+    padding: 0.6rem 0;
+  }
+}
+
+/* Для дуже маленьких екранів (екрани до 480px) */
+@media (max-width: 480px) {
+  .example__title {
+    font-size: 2.5rem;
+    margin-left: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .example__container {
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .card__info {
+    font-size: 2rem;
+    bottom: 1rem;
+  }
+
+  .card__link {
+    font-size: 0.8rem;
+    padding: 0.4rem 0;
+  }
+}
