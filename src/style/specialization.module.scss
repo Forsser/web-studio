@@ -52,9 +52,10 @@
     right: 1rem;
     padding: 1rem;
     border: 1px solid #000000;
-    background: #000000df;
+    background: #151515;
     color: #8e8e8e;
     border-radius: 1.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
     transition: all 0.2s linear;
 
@@ -166,8 +167,9 @@
   }
 
   .item__text button {
-    bottom: -3rem;
-    font-size: 0.9rem;
-    padding: 0.5rem;
+    bottom: -6rem;
+    right: 0.2rem;
+    font-size: 1rem;
+    padding: 0.7rem;
   }
 }

@@ -8,7 +8,7 @@
   &__container {
     display: flex;
     width: 60%;
-    height: 2rem;
+    height: 5rem;
     gap: 5rem;
     justify-content: space-evenly;
   }
@@ -33,8 +33,8 @@
 
     align-items: center;
     justify-content: center;
-    padding: 2.5rem 1rem;
-    background: #69f864b7;
+    padding: 2rem 1rem;
+    background: var(--background-btn);
     color: #fff;
 
     text-transform: uppercase;
@@ -47,7 +47,10 @@
     transition: background 0.1s linear;
 
     &:hover {
-      background: #64f866;
+      background: var(--background-btn-hover);
+    }
+    &:active {
+      background: var(--background-btn-hover);
     }
   }
 }
@@ -57,6 +60,7 @@
   .form__container {
     width: 80%;
     gap: 3rem;
+    height: 100%;
   }
 
   .form__input {
@@ -67,7 +71,7 @@
 
   .form__button {
     font-size: 1.3rem;
-    padding: 2rem 0.8rem;
+    padding: 0.7rem 0.8rem;
     width: 30%;
   }
 }
@@ -75,6 +79,7 @@
 /* Для мобільних пристроїв (екрани до 768px) */
 @media (max-width: 768px) {
   .form {
+    height: 100%;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
@@ -82,27 +87,29 @@
 
   .form__container {
     width: 90%;
+    height: 100%;
     gap: 2rem;
   }
 
   .form__input {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1rem;
   }
 
   .form__button {
     width: 60%;
-    font-size: 1.2rem;
-    padding: 2rem 1rem;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
   }
 }
 
 /* Для дуже маленьких екранів (екрани до 480px) */
 @media (max-width: 480px) {
   .form__container {
-    width: 100%;
-    gap: 1rem;
+    width: 80%;
+    height: 100%;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
   }
@@ -113,8 +120,9 @@
   }
 
   .form__button {
-    width: 100%;
+    margin: 0 auto;
+    width: 50%;
     font-size: 1rem;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
   }
 }

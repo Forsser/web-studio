@@ -44,8 +44,8 @@
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
-    padding: 3rem 20rem;
-    gap: 2rem;
+    padding: 3rem 5vw;
+    gap: 1rem;
     color: rgb(255, 255, 255);
   }
 
@@ -69,6 +69,21 @@
     position: absolute;
     top: 0.5rem;
     left: 1rem;
+
+    @media (max-width: 1024px) {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    @media (max-width: 768px) {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    @media (max-width: 480px) {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 }
 
@@ -145,7 +160,7 @@
 
   .problem__items {
     padding: 2rem 3rem;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .problem__item {
@@ -169,10 +184,12 @@
   .problem__subTitle,
   .problem__footerTitle {
     font-size: 1.2rem;
+    margin: 2rem 0;
   }
 
   .problem__items {
     padding: 1rem 2rem;
+    gap: 1.5rem;
   }
 
   .problem__item {

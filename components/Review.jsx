@@ -3,6 +3,9 @@ import styles from "@/src/style/review.module.scss";
 import review from "@/src/img/review.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import { useEffect } from "react";
 import "swiper/css";
@@ -51,19 +54,40 @@ export default function Review() {
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
-          slidesPerView={3}
+          slidesPerView={3} // За замовчуванням для великих екранів
+          centeredSlides={true} // Центруємо слайд
+          loop={true} // Безкінечний слайдер
+          pagination={{ clickable: true }}
           navigation={{
             nextEl: `.${styles.slider__button_next}`,
             prevEl: `.${styles.slider__button_prev}`,
           }}
-          loop={true}
-          centeredSlides={true}
-          pagination={{ clickable: true }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1.2, // Показуємо трохи більше ніж 1 слайд
+              spaceBetween: 10, // Менший відступ
+            },
+            768: {
+              slidesPerView: 2.5, // Показуємо трохи більше ніж 2 слайди
+              spaceBetween: 15, // Середній відступ
+            },
+            1024: {
+              slidesPerView: 3, // Показуємо 3 слайди
+              spaceBetween: 30, // Стандартний відступ
+            },
+          }}
           className={styles.swiperContainer}
         >
           {reviews.map((review, index) => (
             <SwiperSlide key={index} className={styles.slide}>
-              <img src={review} alt={`Review ${index + 1}`} />
+              <img
+                src={review}
+                alt={`Review ${index + 1}`}
+                style={{
+                  width: "100%",
+                  borderRadius: "10px", // Наприклад, для округлення зображення
+                }}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

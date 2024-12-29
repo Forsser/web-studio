@@ -39,11 +39,35 @@
   }
 
   &__button_next {
-    right: 5rem;
+    right: 5rem; // Стандартний відступ для великих екранів
+
+    @media (max-width: 1024px) {
+      right: 3rem; // Відступ для середніх екранів
+    }
+
+    @media (max-width: 768px) {
+      right: 2rem; // Відступ для маленьких екранів
+    }
+
+    @media (max-width: 480px) {
+      right: 1rem; // Відступ для маленьких екранів
+    }
   }
 
   &__button_prev {
-    left: 5rem;
+    left: 5rem; // Стандартний відступ для великих екранів
+
+    @media (max-width: 1024px) {
+      left: 3rem; // Відступ для середніх екранів
+    }
+
+    @media (max-width: 768px) {
+      left: 2rem; // Відступ для маленьких екранів
+    }
+    @media (max-width: 480px) {
+      width: 1rem;
+      right: 2rem; // Відступ для маленьких екранів
+    }
   }
 }
 
@@ -67,4 +91,10 @@
 
 .slide.swiper-slide-active img {
   transform: scale(1.1); /* Ефект для центрального слайду */
+}
+
+@media (max-width: 480px) {
+  .slider__title {
+    font-size: 2.5rem;
+  }
 }

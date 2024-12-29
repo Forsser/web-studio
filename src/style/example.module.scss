@@ -48,11 +48,11 @@
 
 .card__info {
   position: absolute;
-  bottom: 3rem;
+  bottom: 1rem;
 
   width: 100%;
 
-  padding: 0px 2rem;
+  padding: 0px 1rem;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
@@ -62,7 +62,7 @@
 
 .card__link {
   display: inline-block;
-  background: #000;
+  background: #151515;
   border-radius: 1.5rem;
   transition: all 0.2s linear;
   font-size: 1.5rem;
@@ -191,7 +191,7 @@
   }
 
   .card__link {
-    font-size: 0.8rem;
-    padding: 0.4rem 0;
+    font-size: 1rem;
+    padding: 0.7rem 0;
   }
 }

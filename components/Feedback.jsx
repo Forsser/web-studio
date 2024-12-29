@@ -6,7 +6,8 @@ export default function Feedback() {
     <section className={style.feedback}>
       <div className="container">
         <h3 className={style.feedback__title}>
-          Сподобався якийсь сайт? Залишіть заявку та ми проконсультуємо вас
+          <p> Сподобався якийсь сайт? </p>Залишіть заявку та ми проконсультуємо
+          вас
         </h3>
         <Form />
       </div>

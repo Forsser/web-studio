@@ -1,17 +1,54 @@
 .feedback {
   position: relative;
   background: #000;
-  height: 40rem;
-
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Щоб розташувати елементи вертикально */
 
   &__title {
-    font-size: 3rem;
+    font-size: 3rem; /* Розмір тексту для великих екранів */
     color: #fff;
-    margin-bottom: 5rem;
+    margin-bottom: 5rem; /* Відступ між заголовком та іншими елементами */
     text-align: center;
+  }
+}
+
+/* Адаптація для середніх екранів */
+@media (max-width: 1024px) {
+  .feedback {
+    height: 100%;
+  }
+
+  .feedback__title {
+    font-size: 2.5rem; /* Зменшуємо розмір тексту */
+    margin-bottom: 4rem; /* Зменшуємо відступ */
+  }
+}
+
+/* Адаптація для маленьких екранів */
+@media (max-width: 768px) {
+  .feedback {
+    height: 100%;
+    padding: 2rem; /* Додаємо внутрішні відступи */
+  }
+
+  .feedback__title {
+    font-size: 2rem; /* Ще менший розмір тексту */
+    margin-bottom: 3rem; /* Зменшуємо відступ */
+  }
+}
+
+/* Адаптація для дуже маленьких екранів */
+@media (max-width: 480px) {
+  .feedback {
+    height: 100%;
+  }
+
+  .feedback__title {
+    font-size: 1.8rem; /* Компактний розмір тексту */
+    margin-bottom: 2rem; /* Зменшуємо відступ */
   }
 }

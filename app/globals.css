@@ -5,6 +5,9 @@
 
   --background-about: #f7f9f1;
   --foreground-about: #1f1f1f;
+
+  --background-btn: #f5b027;
+  --background-btn-hover: #f57627;
 }
 
 @media (prefers-color-scheme: dark) {
