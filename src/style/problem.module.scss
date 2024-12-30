@@ -32,6 +32,13 @@
   }
 
   &__footerTitle {
+    width: 60%;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 1rem;
+    margin: 5rem auto;
+  }
+  &__footerFormTitle {
     font-size: 3rem;
     text-align: center;
     padding: 0 1rem;
@@ -116,7 +123,8 @@
   }
 
   .problem__subTitle,
-  .problem__footerTitle {
+  .problem__footerTitle,
+  .problem__footerFormTitle {
     font-size: 1.8rem;
   }
 
@@ -150,7 +158,8 @@
   }
 
   .problem__subTitle,
-  .problem__footerTitle {
+  .problem__footerTitle,
+  .problem__footerFormTitle {
     font-size: 1.5rem;
   }
 
@@ -182,7 +191,8 @@
   }
 
   .problem__subTitle,
-  .problem__footerTitle {
+  .problem__footerTitle,
+  .problem__footerFormTitle {
     font-size: 1.2rem;
     margin: 2rem 0;
   }

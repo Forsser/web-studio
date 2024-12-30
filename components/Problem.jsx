@@ -75,6 +75,11 @@ export default function Problem() {
       </div>
       <h4 className={style.problem__footerTitle}>
         {" "}
+        У результаті ви отримуєте глибоко пророблений інструмент для генерації
+        клієнтів з високою конверсією
+      </h4>
+      <h4 className={style.problem__footerFormTitle}>
+        {" "}
         Залишіть заявку, щоб дізнатися, як ми вирішимо цю проблему для вас
       </h4>
 

@@ -8,6 +8,7 @@ import Review from "@/components/Review";
 import ApplicationForm from "@/components/ApplicationForm";
 import Steps from "@/components/Steps";
 import Team from "@/components/Team";
+import FAQAccordion from "@/components/FAQAccordion";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <ApplicationForm />
       <Steps />
       <Team />
+      <FAQAccordion />
     </>
   );
 }

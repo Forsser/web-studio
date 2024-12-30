@@ -1,5 +1,7 @@
+// Header.jsx
 import Link from "next/link";
 import styles from "./page.module.scss";
+import BurgerMenu from "@/components/BurgerMenu";
 
 export default function Header() {
   return (
@@ -8,6 +10,12 @@ export default function Header() {
         <div className={styles.header__container}>
           <div className={`${styles.header__logo} ${styles.logo}`}>Logo</div>
 
+          {/* Бургер меню для мобільних */}
+          <div className={styles.header__burger}>
+            <BurgerMenu />
+          </div>
+
+          {/* Десктопна навігація */}
           <nav className={`${styles.header__navigation} ${styles.navigation}`}>
             <ul className={styles.navigation__list}>
               <li className={styles.navigation__item}>

@@ -1,7 +1,11 @@
 .header {
   position: relative;
   margin-top: 3rem;
-  z-index: 2;
+  z-index: 5;
+
+  &__burger {
+    display: none; // Приховано за замовчуванням
+  }
 }
 
 .header__container {
@@ -27,11 +31,25 @@
   gap: 3rem;
 }
 
+.logo {
+  z-index: 1001; // Щоб лого було над мобільним меню
+}
 /* Для планшетів (екрани до 1024px) */
 @media (max-width: 1024px) {
+  .header {
+    &__burger {
+      display: flex;
+      justify-content: flex-end;
+      // Показуємо бургер
+    }
+
+    &__navigation,
+    &__contacts {
+      display: none; // Приховуємо десктопну навігацію та контакти
+    }
+  }
   .header__container {
     flex-direction: column; /* Перехід на стовпчик */
-    align-items: center;
     font-size: 1.8rem; /* Зменшення розміру шрифтів */
   }
 
