@@ -76,3 +76,67 @@
     }
   }
 }
+
+// Адаптивність
+@media (max-width: 1024px) {
+  .fqa {
+    .faqList {
+      width: 80%;
+    }
+    .questionContainer .question {
+      font-size: 1.8rem;
+    }
+    .faq__svg {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .faqList {
+    width: 90%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .questionContainer {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: row;
+
+    .question {
+      font-size: 1.6rem;
+      padding-right: 0;
+    }
+    .toggleButton {
+      margin-top: 0.5rem;
+    }
+  }
+  .answer {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .questionContainer {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+
+    .question {
+      font-size: 1.4rem;
+    }
+  }
+  .faq__svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .answer {
+    font-size: 1.2rem;
+  }
+}

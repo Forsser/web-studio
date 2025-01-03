@@ -1,16 +1,15 @@
 "use client";
-import styles from "@/src/style/review.module.scss";
-import review from "@/src/img/review.png";
 
+import review from "@/src/img/review.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import { useEffect } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css";
+
+import styles from "@/src/style/review.module.scss";
 
 const reviews = [review.src, review.src, review.src, review.src];
 
@@ -57,14 +56,16 @@ export default function Review() {
           slidesPerView={3} // За замовчуванням для великих екранів
           centeredSlides={true} // Центруємо слайд
           loop={true} // Безкінечний слайдер
-          pagination={{ clickable: true }}
+          pagination={{
+            clickable: true,
+          }}
           navigation={{
             nextEl: `.${styles.slider__button_next}`,
             prevEl: `.${styles.slider__button_prev}`,
           }}
           breakpoints={{
             320: {
-              slidesPerView: 1.2, // Показуємо трохи більше ніж 1 слайд
+              slidesPerView: 1, // Показуємо трохи більше ніж 1 слайд
               spaceBetween: 10, // Менший відступ
             },
             768: {

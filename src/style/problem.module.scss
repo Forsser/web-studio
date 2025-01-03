@@ -193,8 +193,11 @@
   .problem__subTitle,
   .problem__footerTitle,
   .problem__footerFormTitle {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin: 2rem 0;
+  }
+  .problem__footerTitle {
+    width: 100%;
   }
 
   .problem__items {
@@ -203,12 +206,18 @@
   }
 
   .problem__item {
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: 0.5rem;
   }
 
   .item__text {
-    font-size: 1rem;
-    line-height: 1.8rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .problem__item {
+    font-size: 1.8rem;
   }
 }

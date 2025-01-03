@@ -50,6 +50,10 @@
   transition: all 0.3s ease;
   visibility: hidden; /* Вимикає видимість */
   pointer-events: none; /* Вимикає будь-яку взаємодію */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__active {
     right: 0;
@@ -62,7 +66,6 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-
     background: #ffffff;
   }
 

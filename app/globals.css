@@ -8,6 +8,16 @@
 
   --background-btn: #f5b027;
   --background-btn-hover: #f57627;
+
+  --fz-text-desktop: 1.8rem;
+  --fz-sectionTitle-desktop: 1.8rem;
+  --fz-sectionTitle-desktop: 2.5rem;
+  --fz-sectionSubTitle-desktop: 2rem;
+
+  --fz-text-tablet: 1.8rem;
+  --fz-sectionTitle-tablet: 1.8rem;
+  --fz-sectionTitle-tablet: 2.5rem;
+  --fz-sectionSubTitle-tablet: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
