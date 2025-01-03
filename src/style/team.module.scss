@@ -93,14 +93,14 @@
 
 @media (max-width: 480px) {
   .team__title {
-    font-size: 2.5rem;
+    font-size: var(--fz-sectionTitle-mobile);
     margin-left: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
 
   .team__subtext {
-    font-size: 1.4rem;
+    font-size: var(--fz-text-mobile);
     width: 100%;
   }
 

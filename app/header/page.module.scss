@@ -1,7 +1,9 @@
 .header {
-  position: relative;
-  margin-top: 3rem;
-  z-index: 5;
+  position: sticky;
+  top: 0;
+  padding-top: 3rem;
+  z-index: 99999;
+  backdrop-filter: blur(0.4rem);
 
   &__burger {
     display: none; // Приховано за замовчуванням
@@ -10,7 +12,7 @@
 
 .header__container {
   display: flex;
-  flex-direction: row;
+
   padding: 1rem;
   font-size: 2rem;
   justify-content: space-between;
@@ -49,7 +51,7 @@
     }
   }
   .header__container {
-    flex-direction: column; /* Перехід на стовпчик */
+    flex-direction: row; /* Перехід на стовпчик */
     font-size: 1.8rem; /* Зменшення розміру шрифтів */
   }
 
@@ -68,6 +70,7 @@
 /* Для мобільних пристроїв (екрани до 768px) */
 @media (max-width: 768px) {
   .header__container {
+    flex-direction: row;
     padding: 0.5rem;
     font-size: 1.6rem;
   }

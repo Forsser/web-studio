@@ -80,17 +80,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
   }
 
   &__link {
-    font-size: 1.25rem;
+    font-size: 2rem;
     text-decoration: none;
     color: #000;
+    font-weight: bold;
     transition: color 0.2s;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
 
     &:hover {
       color: #666;
+    }
+    &:active {
+      color: #666;
+      background: #d6d6d6ca;
     }
   }
 }
@@ -99,7 +107,7 @@
   text-align: center;
 
   &__phone {
-    font-size: 1.125rem;
+    font-size: 2rem;
     font-weight: 500;
   }
 }
