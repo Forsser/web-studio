@@ -25,7 +25,7 @@
     color: #fff;
     border: none;
     border-radius: 50%;
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 7rem;
     display: flex;
     align-items: center;
@@ -50,7 +50,7 @@
     }
 
     @media (max-width: 480px) {
-      right: 1rem; // Відступ для маленьких екранів
+      right: -0.5rem; // Відступ для маленьких екранів
     }
   }
 
@@ -65,8 +65,7 @@
       left: 2rem; // Відступ для маленьких екранів
     }
     @media (max-width: 480px) {
-      width: 1rem;
-      right: 2rem; // Відступ для маленьких екранів
+      left: -0.5rem;
     }
   }
 }

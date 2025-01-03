@@ -9,25 +9,25 @@
 
 .header__container {
   display: flex;
-
+  flex-direction: row;
   padding: 1rem;
   font-size: 2rem;
   justify-content: space-between;
 }
 
+.navigation {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
 .navigation__list {
   display: flex;
   flex-direction: row;
-  gap: 6.5rem;
-}
-
-.navigation__item {
+  gap: 5 vw;
 }
 
 .contacts__info {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
 }
 
 .logo {
@@ -37,17 +37,9 @@
 @media (max-width: 1024px) {
   .header {
     &__burger {
-      // Показуємо бургер
-      position: fixed;
-      top: 3.5rem;
-      right: 1rem;
+      // Показуємо бурге
       display: flex;
       justify-content: flex-end;
-
-      z-index: 1002;
-      padding: 0.5rem 0.5rem;
-      background: #ffffffd6;
-      border-radius: 0.5rem;
     }
 
     &__navigation,
@@ -58,6 +50,9 @@
   .header__container {
     flex-direction: row; /* Перехід на стовпчик */
     font-size: 1.8rem; /* Зменшення розміру шрифтів */
+  }
+  .navigation {
+    justify-content: flex-end;
   }
 
   .navigation__list {
