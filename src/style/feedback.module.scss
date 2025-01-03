@@ -32,12 +32,13 @@
 @media (max-width: 768px) {
   .feedback {
     height: 100%;
-    padding: 2rem; /* Додаємо внутрішні відступи */
+    /* Додаємо внутрішні відступи */
   }
 
   .feedback__title {
     font-size: 2rem; /* Ще менший розмір тексту */
-    margin-bottom: 3rem; /* Зменшуємо відступ */
+    margin-bottom: 3rem;
+    padding: 0 0.5rem; /* Зменшуємо відступ */
   }
 }
 
