@@ -47,7 +47,7 @@ export default function BurgerMenu() {
           <ul className={styles.navigation__list}>
             <li className={styles.navigation__item}>
               <Link
-                href="/"
+                href="#example"
                 className={styles.navigation__link}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -56,7 +56,7 @@ export default function BurgerMenu() {
             </li>
             <li className={styles.navigation__item}>
               <Link
-                href="/about"
+                href="#specialization"
                 className={styles.navigation__link}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -65,7 +65,7 @@ export default function BurgerMenu() {
             </li>
             <li className={styles.navigation__item}>
               <Link
-                href="/services"
+                href="#about"
                 className={styles.navigation__link}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -74,7 +74,7 @@ export default function BurgerMenu() {
             </li>
             <li className={styles.navigation__item}>
               <Link
-                href="/portfolio"
+                href="/"
                 className={styles.navigation__link}
                 onClick={() => setIsMenuOpen(false)}
               >

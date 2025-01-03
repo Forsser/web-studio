@@ -4,7 +4,7 @@ import Specialization from "@/components/Specialization";
 
 export default function About() {
   return (
-    <section className={style.about}>
+    <section id="about" className={style.about}>
       <div className="container">
         <h3 className={style.about__title}>Чому ми?</h3>
         <div className={style.light}></div>

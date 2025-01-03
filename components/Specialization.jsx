@@ -7,7 +7,7 @@ import postman from "@/src/img/postman.jpg";
 
 export default function Specialization() {
   return (
-    <div className={style.specialization}>
+    <section id="specialization" className={style.specialization}>
       <div className="container">
         <h3 className={style.specialization__title}>Ми спеціалізуємось</h3>
 
@@ -60,6 +60,6 @@ export default function Specialization() {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

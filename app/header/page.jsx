@@ -19,17 +19,20 @@ export default function Header() {
           <nav className={`${styles.header__navigation} ${styles.navigation}`}>
             <ul className={styles.navigation__list}>
               <li className={styles.navigation__item}>
-                <Link href="/" className={styles.navigation__link}>
+                <Link href="#example" className={styles.navigation__link}>
                   Портфоліо
                 </Link>
               </li>
               <li className={styles.navigation__item}>
-                <Link href="/about" className={styles.navigation__link}>
+                <Link
+                  href="#specialization"
+                  className={styles.navigation__link}
+                >
                   Послуги
                 </Link>
               </li>
               <li className={styles.navigation__item}>
-                <Link href="/services" className={styles.navigation__link}>
+                <Link href="#about" className={styles.navigation__link}>
                   Про нас
                 </Link>
               </li>

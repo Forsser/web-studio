@@ -36,6 +36,7 @@ body {
   height: 100%;
   overflow-x: visible;
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
