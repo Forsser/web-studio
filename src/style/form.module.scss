@@ -126,3 +126,8 @@
     padding: 1rem 1rem;
   }
 }
+@media (max-width: 418px) {
+  .form__button {
+    width: 70%;
+  }
+}
