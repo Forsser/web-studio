@@ -11,10 +11,10 @@ export default function BurgerMenu() {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "unset";
+      document.body.style.overflow = "hidden";
     }
     return () => {
-      document.body.style.overflow = "unset";
+      document.body.style.overflow = "hidden";
     };
   }, [isMenuOpen]);
 
