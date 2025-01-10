@@ -7,7 +7,11 @@ export default function About() {
     <section id="about" className={style.about}>
       <div className="container">
         <div className="title-container">
-          <h3 className={style.about__title}>Чому ми?</h3>
+          <div className={`title-bdr-container ${style.bdr__container} `}>
+            <h3 className={`gradient-title ${style.about__title} `}>
+              Чому ми?
+            </h3>
+          </div>
         </div>
 
         <div className={style.light}></div>

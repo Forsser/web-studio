@@ -1,5 +1,6 @@
 import style from "../src/style/hero.module.scss";
 import ParticleAnimation from "@/components/ParticleAnimation";
+import FramerComponent from "@/components/FrameComponent";
 import Smile from "@/public/icons/smile.svg";
 import { getHeroData } from "@/lib/api/hero";
 import up from "@/public/img/up.png";
@@ -18,7 +19,7 @@ export default async function Hero() {
             <img src={up.src} alt="arrow" className={style.hero__img} />
           </h2>
         </div>
-
+        {/* <FramerComponent /> */}
         <ParticleAnimation />
       </div>
     </section>

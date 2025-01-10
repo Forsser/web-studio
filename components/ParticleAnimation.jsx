@@ -81,10 +81,17 @@ export default function ParticlesBckg() {
                 enable: true,
                 area: 800,
               },
-              value: 50,
+              value: 70,
             },
             opacity: {
-              value: 0.8,
+              value: 1,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: -0.5,
+                sync: true,
+              },
             },
             shape: {
               type: "circle",

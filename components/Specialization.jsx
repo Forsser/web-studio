@@ -10,7 +10,13 @@ export default function Specialization() {
     <section id="specialization" className={style.specialization}>
       <div className="container">
         <div className="title-container">
-          <h3 className={style.specialization__title}>Ми спеціалізуємось</h3>{" "}
+          <div
+            className={`title-bdr-container ${style.specialization__br__container} `}
+          >
+            <h3 className={`gradient-title ${style.specialization__title} `}>
+              Ми спеціалізуємось
+            </h3>{" "}
+          </div>
         </div>
 
         <div className={style.specialization__container}>

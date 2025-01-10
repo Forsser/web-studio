@@ -7,22 +7,19 @@
   border-bottom: 1px solid #373737;
 }
 
+.specialization__br__container::before {
+  background: linear-gradient(to right, rgb(81, 75, 255), rgb(0, 0, 0));
+  -webkit-mask: linear-gradient(rgb(81, 75, 255) 0 0) content-box,
+    linear-gradient(rgb(81, 75, 255) 0 0);
+}
 .specialization__title {
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-  font-size: 5rem;
-  padding: 0.2rem 1rem;
-  background: #8d20e7;
+  background: linear-gradient(to right, #ffffff, #ffffff5c);
 }
 
 .specialization__list {
   display: flex;
   flex-direction: row;
-
+  padding: 3rem 0;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -140,7 +137,6 @@
 @media (max-width: 768px) {
   .specialization__title {
     font-size: 3rem;
-    margin-bottom: 3rem;
   }
 
   .specialization__list {
@@ -164,7 +160,6 @@
 @media (max-width: 480px) {
   .specialization__title {
     font-size: 2.5rem;
-    margin-bottom: 3rem;
   }
 
   .specialization__list {
