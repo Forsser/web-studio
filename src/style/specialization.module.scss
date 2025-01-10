@@ -1,17 +1,22 @@
 .specialization {
   position: relative;
-  background: #000000;
+  background: var(--background);
+
   padding: 0 0 8rem 0;
+
+  border-bottom: 1px solid #373737;
 }
 
 .specialization__title {
+  display: inline-block;
   text-transform: uppercase;
-
   font-weight: bold;
   color: #fff;
-  margin-bottom: 4rem;
-
+  margin-top: 3rem;
+  margin-bottom: 5rem;
   font-size: 5rem;
+  padding: 0.2rem 1rem;
+  background: #8d20e7;
 }
 
 .specialization__list {

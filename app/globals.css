@@ -1,13 +1,15 @@
 @import url(./normalize.css);
 :root {
-  --background: #f7f9f1;
-  --foreground: #1f1f1f;
+  --background: #10100e;
+  --background-white: #ffffff;
 
-  --background-about: #f7f9f1;
+  --background-card: #2b2c3138;
   --foreground-about: #1f1f1f;
 
-  --background-btn: #f5b027;
-  --background-btn-hover: #f57627;
+  --background-review: #181816;
+
+  --background-btn: #00e651;
+  --background-btn-hover: #37a83d;
 
   --fz-text-desktop: 1.8rem;
   --fz-sectionTitle-desktop: 2.5rem;
@@ -18,7 +20,7 @@
   --fz-sectionSubTitle-mobile: 2rem;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #f7f9f1;
     --foreground: #1f1f1f;
@@ -26,7 +28,7 @@
     --background-about: #f7f9f1;
     --foreground-about: #1f1f1f;
   }
-}
+} */
 
 html,
 body {
@@ -66,6 +68,11 @@ a {
   width: 100%;
   margin: 0px auto;
   padding: 2rem 4rem;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1024px) {

@@ -35,7 +35,7 @@ export default function ParticlesBckg() {
         options={{
           background: {
             color: {
-              value: "#ffffff",
+              value: "#000000",
             },
           },
           fpsLimit: 120,
@@ -63,15 +63,9 @@ export default function ParticlesBckg() {
           },
           particles: {
             color: {
-              value: "#000000",
+              value: "#fff5b3",
             },
-            links: {
-              color: "#000000",
-              distance: 150,
-              enable: true,
-              opacity: 1,
-              width: 1,
-            },
+
             move: {
               direction: "none",
               enable: true,
@@ -79,7 +73,7 @@ export default function ParticlesBckg() {
                 default: "bounce",
               },
               random: false,
-              speed: 2,
+              speed: 1.5,
               straight: false,
             },
             number: {
@@ -97,6 +91,15 @@ export default function ParticlesBckg() {
             },
             size: {
               value: { min: 1, max: 3 },
+            },
+            shadow: {
+              enable: true, // Увімкнути тінь
+              color: "#fff25e", // Колір тіні (також колір сяйва)
+              blur: 20, // Інтенсивність розмиття (розмір сяйва)
+              offset: {
+                x: 0, // Зсув по X
+                y: 0, // Зсув по Y
+              },
             },
           },
           detectRetina: true,

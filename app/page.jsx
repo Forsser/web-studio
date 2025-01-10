@@ -9,6 +9,7 @@ import ApplicationForm from "@/components/ApplicationForm";
 import Steps from "@/components/Steps";
 import Team from "@/components/Team";
 import FAQAccordion from "@/components/FAQAccordion";
+import ThreeScene from "@/components/S-3d";
 
 export default function Home() {
   return (

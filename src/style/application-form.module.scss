@@ -1,9 +1,11 @@
 .aplication {
   position: relative;
-  background: #000;
+  background: var(--background);
   height: 100%;
   font-size: 2rem;
   padding-bottom: 5rem;
+
+  border-bottom: 1px solid #373737;
 
   &__title {
     text-align: center;
@@ -20,7 +22,7 @@
 }
 
 .form__container {
-  background: #080808;
+  background: #181816;
   color: #ffffff;
   width: 70%;
   margin: 0 auto;
@@ -38,7 +40,7 @@
   &__title {
     padding: 1rem;
     font-weight: bold;
-    border-bottom: solid 1px #2e2e2e;
+    border-bottom: solid 1px #ffffff7e;
   }
   &__input {
     display: flex;
@@ -54,7 +56,7 @@
       padding: 0.5rem;
       width: 60%;
       border-radius: 0.5rem;
-      background: #1d1d1d;
+      background: #242423;
 
       &:focus {
         outline: none; /* Прибирає білу рамку */
@@ -66,7 +68,7 @@
 
   &__button {
     width: 20%;
-    border: 1px solid #2a2a2a;
+    border: 1px solid #ffffff7e;
     border-radius: 1rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -86,12 +88,12 @@
   }
 
   &:hover {
-    border: 1px solid #262626;
+    border: 1px solid #5756567e;
   }
 }
 .input__check {
-  background: #1f1f1f;
-  border: 1px solid #2a2a2a;
+  background: #2e2e2d;
+  border: 1px solid #292519;
 
   margin: 1rem;
   padding: 0.5rem;

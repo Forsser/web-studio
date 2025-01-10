@@ -9,7 +9,9 @@ export default function Specialization() {
   return (
     <section id="specialization" className={style.specialization}>
       <div className="container">
-        <h3 className={style.specialization__title}>Ми спеціалізуємось</h3>
+        <div className="title-container">
+          <h3 className={style.specialization__title}>Ми спеціалізуємось</h3>{" "}
+        </div>
 
         <div className={style.specialization__container}>
           <ul className={style.specialization__list}>

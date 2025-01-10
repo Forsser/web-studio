@@ -1,19 +1,21 @@
 .example {
   position: relative;
-  backdrop-filter: blur(0.4rem);
+  background: var(--background);
   height: 100%;
   padding-bottom: 5rem;
+  border-bottom: 1px solid #373737;
 
   &__title {
-    display: flex;
-    justify-content: flex-end;
     text-transform: uppercase;
     font-size: 5rem;
     font-weight: bold;
-    margin-left: 2rem;
     margin-top: 3rem;
-    color: rgb(0, 0, 0);
     margin-bottom: 5rem;
+    color: rgb(255, 255, 255);
+
+    padding: 0.2rem 1rem;
+
+    background: #8d20e7;
   }
 
   &__container {
@@ -23,7 +25,8 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    background: #ffffff;
+    border: 1px solid #454545;
+    border-radius: 1.5rem;
     padding: 2rem;
   }
 
@@ -49,22 +52,18 @@
 
 .card__info {
   position: absolute;
-  bottom: 1rem;
+  bottom: -1rem;
+  left: -1rem;
+  padding: 0px 0rem;
 
-  width: 100%;
-
-  padding: 0px 1rem;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 4rem;
+  background: #ffffff;
+  border-radius: 1.5rem;
   z-index: 3;
 }
 
 .card__link {
+  position: relative;
   display: inline-block;
-  background: #151515;
-  border-radius: 1.5rem;
   transition: all 0.2s linear;
   font-size: 1.5rem;
   padding: 1rem 0;
@@ -74,9 +73,17 @@
 
   &:hover {
     cursor: pointer;
-    color: #000000;
+  }
 
-    background: #ffffff;
+  .svgIcon {
+    width: 6rem;
+    height: 6rem;
+    color: #73ed3f;
+    transition: all 0.1s linear;
+
+    &:hover {
+      color: #5ab533;
+    }
   }
 }
 
@@ -87,19 +94,6 @@
 
   align-items: center;
   justify-content: center;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0000003b;
-    backdrop-filter: blur(0.4rem);
-    z-index: 2;
-    transition: background 0.2s ease, backdrop-filter 0.2s ease; // плавний ефект
-  }
 }
 
 .card__img {

@@ -27,14 +27,20 @@ const Steps = () => {
   return (
     <div className={style.steps}>
       <div className="container">
-        <h3 className={style.steps__title}>Працюємо у 4 етапи</h3>
+        <div className="title-container">
+          <h3 className={style.steps__title}>Працюємо у 4 етапи</h3>{" "}
+        </div>
         <div className={style.stepsContainer}>
           <div className={style.line}>
             <div className={style.pulse}></div>
           </div>
           {steps.map((step, index) => (
             <>
-              <div key={step.id} className={style.step}>
+              <div
+                key={step.id}
+                className={style.step}
+                style={{ animationDelay: `${index * 0.5}s` }}
+              >
                 <div className={style.content}>
                   <p className={style.content__title}>{step.title}</p>
                   <p className={style.content__text}>{step.text}</p>

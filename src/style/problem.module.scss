@@ -1,8 +1,10 @@
 .problem {
-  background: #000000;
+  background: var(--background);
   position: relative;
   color: aliceblue;
   padding-bottom: 5rem;
+
+  border-bottom: 1px solid #373737;
 
   &__titleContainer {
     display: flex;
@@ -67,7 +69,7 @@
     align-self: stretch;
     padding: 1rem;
     font-size: 2rem;
-    background: rgba(50, 50, 50, 0.375);
+    background: var(--background-card);
     border: 1px solid #404040;
     border-radius: 1rem;
   }

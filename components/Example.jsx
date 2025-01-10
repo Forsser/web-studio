@@ -5,12 +5,15 @@ import redAndDog from "@/src/img/red-and-dog.jpg";
 import bazhane from "@/src/img/bazhane.webp";
 import Hotshoes from "@/public/icons/hotshoes.svg";
 import Mops from "@/public/icons/mops.svg";
+import Arrow from "@/public/icons/arrow.svg";
 
 export default function Example() {
   return (
     <section id="example" className={style.example}>
       <div className="container">
-        <h3 className={style.example__title}>Приклади робіт</h3>
+        <div className="title-container">
+          <h3 className={style.example__title}>Приклади робіт</h3>
+        </div>
         <ul className={style.example__container}>
           <li className={style.example__card}>
             <div className={style.card__img__wrapper}>
@@ -18,10 +21,9 @@ export default function Example() {
             </div>
 
             <div className={style.card__info}>
-              <div className={style.card__name}>RAIDUGA</div>
               <div className={style.card__link}>
                 <a href="https://raiduga.com.ua/" target="blank">
-                  Переглянути
+                  <Arrow fill="currentColor" className={style.svgIcon}></Arrow>
                 </a>
               </div>
             </div>
@@ -36,10 +38,9 @@ export default function Example() {
             </div>
 
             <div className={style.card__info}>
-              <div className={style.card__name}>BABYLON</div>
               <div className={style.card__link}>
                 <a href="https://babylon.net.ua/" target="blank">
-                  Переглянути
+                  <Arrow fill="currentColor" className={style.svgIcon}></Arrow>
                 </a>
               </div>
             </div>
@@ -55,10 +56,9 @@ export default function Example() {
             </div>
 
             <div className={style.card__info}>
-              <div className={style.card__name}>RED-AND-DOG</div>
               <div className={style.card__link}>
                 <a href="https://redndog.com/ua/" target="blank">
-                  Переглянути
+                  <Arrow fill="currentColor" className={style.svgIcon}></Arrow>
                 </a>
               </div>
             </div>
@@ -74,10 +74,9 @@ export default function Example() {
             </div>
 
             <div className={style.card__info}>
-              <div className={style.card__name}>BAZHANE</div>
               <div className={style.card__link}>
                 <a href="https://bazhane.com.ua/" target="blank">
-                  Переглянути
+                  <Arrow fill="currentColor" className={style.svgIcon}></Arrow>
                 </a>
               </div>
             </div>
@@ -89,10 +88,9 @@ export default function Example() {
             </div>
 
             <div className={style.card__info}>
-              <div className={style.card__name}>HOTSHOEZ</div>
               <div className={style.card__link}>
                 <a href="https://hotshoes.com.ua/" target="blank">
-                  Переглянути
+                  <Arrow fill="currentColor" className={style.svgIcon}></Arrow>
                 </a>
               </div>
             </div>
@@ -104,10 +102,9 @@ export default function Example() {
             </div>
 
             <div className={style.card__info}>
-              <div className={style.card__name}>MOPS</div>
               <div className={style.card__link}>
                 <a href="https://mops.ua/" target="blank">
-                  Переглянути
+                  <Arrow fill="currentColor" className={style.svgIcon}></Arrow>
                 </a>
               </div>
             </div>

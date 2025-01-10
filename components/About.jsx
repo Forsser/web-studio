@@ -6,7 +6,10 @@ export default function About() {
   return (
     <section id="about" className={style.about}>
       <div className="container">
-        <h3 className={style.about__title}>Чому ми?</h3>
+        <div className="title-container">
+          <h3 className={style.about__title}>Чому ми?</h3>
+        </div>
+
         <div className={style.light}></div>
         <ul className={style.about__list}>
           <li className={style.about__item}>
