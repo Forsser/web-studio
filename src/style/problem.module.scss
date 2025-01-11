@@ -1,9 +1,8 @@
 .problem {
-  background: var(--background);
   position: relative;
   color: aliceblue;
   padding-bottom: 5rem;
-
+  margin-top: 5rem;
   border-bottom: 1px solid #373737;
 
   &__titleContainer {
@@ -11,17 +10,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 8rem;
 
-    width: 80%;
+    width: 60%;
     margin: 0px auto;
   }
 
   &__mainTitle {
-    font-size: 4rem;
-    text-align: center;
-    font-weight: bold;
+    background: linear-gradient(to right, #ffffff, #ffffff5c);
   }
+
   &__subTitle {
     font-size: 2rem;
     text-align: center;
@@ -56,6 +54,12 @@
     padding: 3rem 5vw;
     gap: 1rem;
     color: rgb(255, 255, 255);
+    /* Властивості для картинки */
+
+    background-image: url("/img/mask-1.png");
+    background-repeat: no-repeat; /* Забороняє повторення */
+    background-position: center calc(50% + 1.7rem); /* Вирівнює по центру блоку */
+    background-size: 30vw auto; /* Встановлює власні розміри (50% ширини та висоти) */
   }
 
   &__item {
@@ -64,13 +68,14 @@
     gap: 1rem;
     align-items: center;
     position: relative;
-    flex-basis: 45%;
+    flex-basis: 35%;
     min-height: 100%;
     align-self: stretch;
-    padding: 1rem;
+    padding: 2rem;
     font-size: 2rem;
-    background: var(--background-card);
-    border: 1px solid #404040;
+    backdrop-filter: blur(0.8rem);
+    background-color: #20202066;
+    border: 1px solid #40404000;
     border-radius: 1rem;
   }
 
@@ -78,6 +83,10 @@
     position: absolute;
     top: 0.5rem;
     left: 1rem;
+    @media (max-width: 1320px) {
+      width: 5rem;
+      height: 5rem;
+    }
 
     @media (max-width: 1024px) {
       width: 5rem;
@@ -88,12 +97,12 @@
       width: 4rem;
       height: 4rem;
     }
-
-    @media (max-width: 480px) {
-      width: 3rem;
-      height: 3rem;
-    }
   }
+}
+.title__container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
 .item__title {
@@ -104,7 +113,6 @@
   text-transform: uppercase;
 }
 .item__text {
-  padding: 1rem;
   font-size: 1.5rem;
   line-height: 3rem;
 
@@ -138,6 +146,7 @@
   .problem__items {
     padding: 2rem 10rem;
     gap: 1.5rem;
+    background-image: url("");
   }
 
   .problem__item {
@@ -150,6 +159,12 @@
     font-size: 1.4rem;
     line-height: 2.5rem;
   }
+}
+
+.problem__bdr__container::before {
+  background: linear-gradient(to right, rgb(233, 255, 107), rgb(0, 0, 0));
+  -webkit-mask: linear-gradient(rgb(233, 255, 107) 0 0) content-box,
+    linear-gradient(rgb(233, 255, 107) 0 0);
 }
 
 /* Для мобільних пристроїв (екрани до 768px) */

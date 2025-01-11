@@ -3,8 +3,6 @@
   background: var(--background);
 
   padding: 0 0 8rem 0;
-
-  border-bottom: 1px solid #373737;
 }
 
 .specialization__br__container::before {
@@ -35,10 +33,16 @@
   min-height: 100%;
 
   h4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #fff;
+    background: linear-gradient(
+      to right,
+      #7e7efb,
+      #ffffff2f
+    ); /* Від білого до темно-сірого */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 

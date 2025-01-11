@@ -2,24 +2,32 @@ import style from "@/src/style/example.module.scss";
 import Raiduga from "@/public/icons/raiduga.svg";
 import babylon from "@/src/img/babylon-screen.png.jpg";
 import redAndDog from "@/src/img/red-and-dog.jpg";
-import bazhane from "@/src/img/bazhane.webp";
+import redAndDogMobile from "@/src/img/red-and-dog-mobile.jpg";
+import hotches from "@/src/img/hotches.jpg";
+import hotchesMobile from "@/src/img/hotches-mobile.jpg";
 import Hotshoes from "@/public/icons/hotshoes.svg";
 import Mops from "@/public/icons/mops.svg";
-import Arrow from "@/public/icons/arrow.svg";
+import Arrow from "@/public/icons/arrow-circle.svg";
+import MockUp from "@/components/MockUp";
 
 export default function Example() {
   return (
     <section id="example" className={style.example}>
       <div className="container">
         <div className="title-container">
-          <h3 className={style.example__title}>Приклади робіт</h3>
+          <div
+            className={`title-bdr-container ${style.example__bdr__container} `}
+          >
+            <h3 className={`gradient-title ${style.example__title} `}>
+              Приклади робіт
+            </h3>
+          </div>
         </div>
         <ul className={style.example__container}>
-          <li className={style.example__card}>
+          {/*<li className={style.example__card}>
             <div className={style.card__img__wrapper}>
               <Raiduga />
             </div>
-
             <div className={style.card__info}>
               <div className={style.card__link}>
                 <a href="https://raiduga.com.ua/" target="blank">
@@ -108,8 +116,30 @@ export default function Example() {
                 </a>
               </div>
             </div>
-          </li>
+          </li>*/}
+          <MockUp
+            pcImage={redAndDog.src}
+            mobileImage={redAndDogMobile.src}
+            border={"leftTop"}
+          />
+          <MockUp
+            pcImage={hotches.src}
+            mobileImage={hotchesMobile.src}
+            border={"RightTop"}
+          />
+          <MockUp
+            pcImage={redAndDog.src}
+            mobileImage={redAndDogMobile.src}
+            border={"leftBottom"}
+          />
+          <MockUp
+            pcImage={redAndDog.src}
+            mobileImage={redAndDogMobile.src}
+            border={"RightBottom"}
+          />
         </ul>
+
+        {/* pcImage={redAndDog.src} mobileImage={redAndDog.src}  */}
       </div>
     </section>
   );

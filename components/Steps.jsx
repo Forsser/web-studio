@@ -28,7 +28,13 @@ const Steps = () => {
     <div className={style.steps}>
       <div className="container">
         <div className="title-container">
-          <h3 className={style.steps__title}>Працюємо у 4 етапи</h3>{" "}
+          <div
+            className={`title-bdr-container ${style.steps__bdr__container} `}
+          >
+            <h3 className={`gradient-title ${style.steps__title} `}>
+              Працюємо у 4 етапи
+            </h3>
+          </div>
         </div>
         <div className={style.stepsContainer}>
           <div className={style.line}>

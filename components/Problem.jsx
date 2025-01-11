@@ -9,13 +9,14 @@ export default function Problem() {
   return (
     <section className={style.problem}>
       <div className="container">
-        <div className={style.problem__titleContainer}>
-          <h3 className={style.problem__mainTitle}>
-            <span className={style.mainTitle__accent}>
-              80% сайтів в інтернеті
-            </span>{" "}
-            - гарні пустушки
+        <div
+          className={`title-bdr-container ${style.problem__bdr__container} `}
+        >
+          <h3 className={`gradient-title ${style.problem__mainTitle} `}>
+            80% сайтів в інтернеті- гарні пустишки
           </h3>
+        </div>
+        <div className={style.problem__titleContainer}>
           <h4 className={style.problem__subTitle}>
             На жаль, більшість сайтів в інтернеті - красиві пустушки, що не
             продають. Клієнт не розуміє, чому він повинен залишати заявку на
@@ -28,8 +29,14 @@ export default function Problem() {
 
         <ul className={style.problem__items}>
           <li className={style.problem__item}>
-            <Check width="6rem" height="6rem" className={style.problem__svg} />
-            <p className={style.item__title}>Складаємо стратегію</p>
+            <div className={style.title__container}>
+              <Check
+                width="6rem"
+                height="6rem"
+                className={style.problem__svg}
+              />
+              <p className={style.item__title}>Складаємо стратегію</p>
+            </div>
             <p className={style.item__text}>
               Аналізуємо ринок та конкурентів, щоб створити найкращий сайт у
               ніші. Аналізуємо ЦА та їх запити. Використовуємо сильні та слабкі
@@ -37,12 +44,15 @@ export default function Problem() {
             </p>
           </li>
           <li className={style.problem__item}>
-            <Certificate
-              width="6rem"
-              height="6rem"
-              className={style.problem__svg}
-            />
-            <p className={style.item__title}>Складаємо стратегію</p>
+            <div className={style.title__container}>
+              <Certificate
+                width="6rem"
+                height="6rem"
+                className={style.problem__svg}
+              />
+              <p className={style.item__title}>Складаємо стратегію</p>
+            </div>
+
             <p className={style.item__text}>
               Аналізуємо ринок та конкурентів, щоб створити найкращий сайт у
               Аналізуємо ринок та конкурентів, щоб створити найкращий сайт у
@@ -50,12 +60,15 @@ export default function Problem() {
             </p>
           </li>
           <li className={style.problem__item}>
-            <Discount
-              width="6rem"
-              height="6rem"
-              className={style.problem__svg}
-            />
-            <p className={style.item__title}>Складаємо стратегію</p>
+            <div className={style.title__container}>
+              <Discount
+                width="6rem"
+                height="6rem"
+                className={style.problem__svg}
+              />
+              <p className={style.item__title}>Складаємо стратегію</p>
+            </div>
+
             <p className={style.item__text}>
               Аналізуємо ринок та конкурентів, щоб створити найкращий сайт у
               ніші. Аналізуємо ЦА та їх запити. Використовуємо сильні та слабкі
@@ -63,8 +76,14 @@ export default function Problem() {
             </p>
           </li>
           <li className={style.problem__item}>
-            <Money width="6rem" height="6rem" className={style.problem__svg} />
-            <p className={style.item__title}>Складаємо стратегію</p>
+            <div className={style.title__container}>
+              <Money
+                width="6rem"
+                height="6rem"
+                className={style.problem__svg}
+              />
+              <p className={style.item__title}>Складаємо стратегію</p>
+            </div>
             <p className={style.item__text}>
               Аналізуємо ринок та конкурентів, щоб створити найкращий сайт у
               ніші. Аналізуємо ЦА та їх запити. Використовуємо сильні та слабкі

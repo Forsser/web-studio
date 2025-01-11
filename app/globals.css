@@ -6,7 +6,7 @@
   --background-card: #2b2c3138;
   --foreground-about: #1f1f1f;
 
-  --background-review: #181816;
+  --background-review: #0c0c0c;
 
   --background-btn: #00e651;
   --background-btn-hover: #37a83d;
@@ -76,9 +76,11 @@ a {
 }
 
 .title-bdr-container {
+  display: inline-block;
   position: relative;
   border-radius: 3rem;
   isolation: isolate;
+  margin-bottom: 3rem;
 
   &::before {
     content: "";
@@ -98,10 +100,10 @@ a {
 .gradient-title {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: bold;
   line-height: normal;
-  padding: 0.2rem 2.5rem;
+  padding: 0.5rem 2.5rem;
   border-radius: 3rem;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;

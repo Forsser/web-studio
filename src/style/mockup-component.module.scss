@@ -1,0 +1,60 @@
+.mockupContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  backdrop-filter: blur(0.5rem);
+  background: var(--background-card);
+  border: 1px solid rgba(103, 102, 109, 0.4509803922);
+  border-radius: 1.5rem;
+
+  height: 40rem;
+  width: 68rem; /* Виправлено значення */
+}
+
+.laptopContainer,
+.mobileContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.laptopContainer {
+  width: 100%;
+
+  height: 85%;
+  transform: translateX(9rem) scale(1);
+  z-index: 1;
+}
+
+.mockupImage {
+  position: absolute; /* Обов'язково для fill */
+
+  inset: 0; /* Розтягування зображення по всій площі контейнера */
+  object-fit: contain; /* Або contain, якщо потрібно зберегти пропорції */
+}
+
+.pcScreen {
+  position: absolute;
+  border-radius: 0.5rem;
+  top: 24.5%; /* Змінити залежно від вашого макету */
+  left: 8.33%; /* Змінити залежно від вашого макету */
+  width: 83.3%; /* Змінити залежно від вашого макету */
+  height: 46.2%; /* Змінити залежно від вашого макету */
+  overflow: hidden;
+}
+.mobileScreen {
+  position: absolute;
+  top: 11.6%; /* Змінити залежно від вашого макету */
+  left: 29.2%; /* Змінити залежно від вашого макету */
+  width: 44.2%; /* Змінити залежно від вашого макету */
+  height: 76.8%; /* Змінити залежно від вашого макету */
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.screenContent {
+  width: 100%;
+}

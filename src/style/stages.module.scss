@@ -6,20 +6,14 @@
   height: 100%;
   padding-bottom: 5rem;
 
-  border-bottom: 1px solid #373737;
-
   &__title {
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 5rem;
-    font-weight: bold;
-    margin-top: 3rem;
-    margin-bottom: 5rem;
-    color: rgb(255, 255, 255);
-    margin-bottom: 5rem;
-    padding: 0.2rem 1rem;
-    background: #8d20e7;
+    background: linear-gradient(to right, #000000, #6767674a);
   }
+}
+.steps__bdr__container::before {
+  background: linear-gradient(to right, rgb(35, 35, 35), rgb(255, 255, 255));
+  -webkit-mask: linear-gradient(rgb(35, 35, 35), rgb(255, 255, 255)) content-box,
+    linear-gradient(rgb(35, 35, 35), rgb(255, 255, 255));
 }
 
 .stepsContainer {

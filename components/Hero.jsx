@@ -1,6 +1,7 @@
 import style from "../src/style/hero.module.scss";
 import ParticleAnimation from "@/components/ParticleAnimation";
 import FramerComponent from "@/components/FrameComponent";
+import HeroForm from "@/components/HeroForm";
 import Smile from "@/public/icons/smile.svg";
 import { getHeroData } from "@/lib/api/hero";
 import up from "@/public/img/up.png";
@@ -13,7 +14,10 @@ export default async function Hero() {
     <section className={style.hero}>
       <div className="container">
         <div className={style.hero__title}>
-          <h1 className={style.hero__text}>Ідеї, які реалізуються в коді</h1>
+          <h1 className={style.hero__text}>
+            Створюємо сайти, які залучають на 114% більше заявок, за рахунок
+            опрацьованої стратегії та правильної упаковки
+          </h1>
           <h2 className={style.hero__subtext}>
             <p> Технології, для росту твоєї компанії</p>
             <img src={up.src} alt="arrow" className={style.hero__img} />
@@ -22,6 +26,7 @@ export default async function Hero() {
         {/* <FramerComponent /> */}
         <ParticleAnimation />
       </div>
+      <HeroForm />
     </section>
   );
 }
