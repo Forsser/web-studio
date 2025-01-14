@@ -48,7 +48,7 @@
       border-radius: 1rem;
 
       background: #191919;
-      box-shadow: 0.2rem 0.5rem 0.8rem 0.2rem rgba(33, 33, 33, 0.551);
+      box-shadow: 0.5rem 0.5rem 0.8rem 0.2rem rgba(61, 61, 61, 0.551);
       background-image: url("/icons/ok.svg");
       background-size: 5rem;
       background-position: center;
@@ -58,7 +58,13 @@
 
   &__title {
     font-weight: bold;
-    color: #bbc1ff;
+    background: linear-gradient(
+      to right,
+      #fff82d,
+      #ffffff
+    ); /* Від білого до темно-сірого */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Встановлення прозорого тексту */
   }
 
   &__text {
