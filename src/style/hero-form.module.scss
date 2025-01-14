@@ -1,6 +1,6 @@
 .form {
   position: relative;
-  width: 50%;
+  width: 40%;
   height: 100%;
   border: 1px solid #313131;
   backdrop-filter: blur(0.5rem);
@@ -8,6 +8,7 @@
   padding: 2rem;
 
   &__title {
+    text-align: center;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -25,22 +26,22 @@
   &__input {
     border: 0.1rem solid #333333;
     padding: 1rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     background: #0f0e0e;
     font-size: 1.4rem;
   }
 
   &__button {
     padding: 1rem;
-    border: 0.1rem solid #fdfda0;
-    border-radius: 2rem;
+    border: 0.1rem solid #55151595;
+    border-radius: 1rem;
     font-size: 1.5rem;
-    background: #94a733;
+    background: #f85114;
     cursor: pointer;
     font-weight: bold;
 
     &:hover {
-      background: rgba(217, 244, 85, 0.849);
+      background: rgba(255, 16, 16, 0.862);
     }
   }
 }

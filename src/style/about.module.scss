@@ -2,21 +2,19 @@
   position: relative;
   width: 100%;
 
-  margin-top: 15rem;
-
   z-index: 2;
 
-  background: var(--background);
+  background: #fffff3;
 
   /* Додаємо псевдоелемент для рамки */
-  .bdr__container::before {
+  /*  .bdr__container::before {
     background: linear-gradient(to right, rgb(233, 255, 107), rgb(0, 0, 0));
     -webkit-mask: linear-gradient(rgb(233, 255, 107) 0 0) content-box,
       linear-gradient(rgb(233, 255, 107) 0 0);
-  }
+  } */
 
   &__title {
-    background: linear-gradient(to right, #ffffff, #ffffff5c);
+    background: #000000;
   }
 
   &__list {
@@ -25,7 +23,7 @@
     justify-content: space-between;
     padding: 3rem 20rem;
     gap: 2rem;
-    color: rgb(255, 255, 255);
+    color: rgb(73, 73, 73);
   }
 
   &__item {
@@ -33,15 +31,16 @@
     padding: 1rem;
     font-size: 2rem;
     background: var(--background-card);
-    border: 1px solid #67666d73;
+    border: 1px solid #abab8e73;
     border-radius: 1.5rem;
+    box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(171, 180, 149, 0.551);
   }
 }
 
 .item__container {
   display: flex;
   gap: 2rem;
-  color: #f9f9f9b5;
+  color: #232323cc;
   font-size: 1.7rem;
   padding: 1rem;
 }
@@ -49,44 +48,10 @@
   font-family: sans-serif;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: #fefefe;
+  color: #1b1b1b;
   font-size: 2.5rem;
 
   border-radius: 1.5rem;
-}
-
-.light {
-  position: absolute;
-  top: 50%; /* Центруємо світло по вертикалі */
-  left: 50%; /* Центруємо світло по горизонталі */
-  width: 40rem; /* Ширина світла */
-  height: 40rem; /* Висота світла */
-  background: radial-gradient(
-    circle,
-    #ffffffcc 0%,
-    rgba(255, 255, 255, 0.303) 70%
-  ); /* Світло з центром */
-  border-radius: 50%; /* Округлені краї для ефекту світла */
-  transform: translate(-50%, -50%); /* Центруємо елемент */
-  pointer-events: none; /* Не впливає на взаємодію з іншими елементами */
-  box-shadow: 0 0 200px rgba(255, 255, 255, 0.732); /* Розсіяний ефект світла */
-  animation: pulse 6s infinite; /* Додаємо анімацію для ефекту пульсації */
-}
-
-@keyframes pulse {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0.2;
-  }
-
-  50% {
-    transform: translate(-50%, -50%) scale(1.1);
-    opacity: 0.6;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0.2;
-  }
 }
 
 /* Для планшетів (екрани до 1024px) */

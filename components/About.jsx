@@ -9,7 +9,7 @@ export default function About() {
         <div className="title-container">
           <div className={`title-bdr-container ${style.bdr__container} `}>
             <h3 className={`gradient-title ${style.about__title} `}>
-              Чому ми?
+              4 причини вибрати нас
             </h3>
           </div>
         </div>

@@ -19,10 +19,11 @@ export default async function Hero() {
             опрацьованої стратегії та правильної упаковки
           </h1>
           <h2 className={style.hero__subtext}>
-            <p> Технології, для росту твоєї компанії</p>
+            <p> Зробимо найсильніший сайт у вашій ніші</p>
             <img src={up.src} alt="arrow" className={style.hero__img} />
           </h2>
         </div>
+
         {/* <FramerComponent /> */}
         <ParticleAnimation />
       </div>

@@ -2,7 +2,7 @@
   z-index: 2;
   margin-top: 5rem;
   display: flex;
-  padding: 0 5rem;
+  padding: 0 15rem;
 }
 
 .hero__title {
@@ -30,8 +30,7 @@
 }
 
 .hero__subtext {
-  width: 80%;
-  display: flex;
+  display: inline-flex;
   align-items: end;
   font-size: 2rem;
   margin-top: 3rem;

@@ -10,11 +10,13 @@ import Steps from "@/components/Steps";
 import Team from "@/components/Team";
 import FAQAccordion from "@/components/FAQAccordion";
 import ThreeScene from "@/components/S-3d";
+import Advantages from "@/components/Advantages";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <Advantages />
       <About />
       <Specialization />
       <Example />

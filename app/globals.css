@@ -3,7 +3,7 @@
   --background: #000000;
   --background-white: #ffffff;
 
-  --background-card: #2b2c3138;
+  --background-card: #fcffaf38;
   --foreground-about: #1f1f1f;
 
   --background-review: #0c0c0c;
@@ -34,7 +34,7 @@ html,
 body {
   max-width: 100vw;
   height: 100%;
-  overflow-x: hidden;
+
   font-size: 10px;
   scroll-behavior: smooth;
 }
@@ -72,7 +72,7 @@ a {
 
 .title-container {
   display: flex;
-  justify-content: start;
+  justify-content: center;
 }
 
 .title-bdr-container {
@@ -107,6 +107,29 @@ a {
   border-radius: 3rem;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
+}
+
+/* Загальний стиль для скролбару */
+::-webkit-scrollbar {
+  width: 12px; /* Ширина вертикального скролбару */
+  height: 12px; /* Висота горизонтального скролбару */
+}
+
+/* Стиль фону скролбару */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Колір фону скролбару */
+  border-radius: 10px; /* Закруглені краї */
+}
+
+/* Стиль повзунка (scroll thumb) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Колір повзунка */
+  border-radius: 10px; /* Закруглені краї */
+}
+
+/* Стиль повзунка при наведенні курсору */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Темніший колір при наведенні */
 }
 
 @media (max-width: 1024px) {
