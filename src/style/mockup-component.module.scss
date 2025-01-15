@@ -31,3 +31,31 @@
 .screenContent {
   object-fit: contain;
 }
+.mockup__link {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 5rem; /* Вся область буде клікабельною */
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  text-decoration: none; /* Важливо для зняття стилів посилання */
+  z-index: 1;
+}
+
+.mockup__svg {
+  width: 5rem; /* SVG займає всю область посилання */
+  height: 5rem;
+  color: #2c29dc;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: #7270ff;
+  }
+  &:active {
+    color: #7270ff;
+  }
+}

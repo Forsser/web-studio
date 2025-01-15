@@ -24,32 +24,32 @@ export default function Example() {
           <Mockup
             pcImage={redAndDog.src}
             mobileImage={redAndDogMobile.src}
-            border={"leftTop"}
+            url={"https://redndog.com/ua/"}
           />
           <Mockup
             pcImage={hotches.src}
             mobileImage={hotchesMobile.src}
-            border={"RightTop"}
+            url={"https://hotshoes.com.ua/"}
           />
           <Mockup
             pcImage={mops.src}
             mobileImage={mopsMobile.src}
-            border={"leftBottom"}
+            url={"https://mops.ua/"}
           />
           <Mockup
             pcImage={bazhane.src}
             mobileImage={bazhaneMobile.src}
-            border={"RightBottom"}
+            url={"https://bazhane.com.ua/"}
           />
           <Mockup
             pcImage={Raiduga.src}
             mobileImage={RaidugaMobile.src}
-            border={"RightBottom"}
+            url={"http://raiduga.com.ua/"}
           />
           <Mockup
             pcImage={babylon.src}
             mobileImage={babylonMobile.src}
-            border={"RightBottom"}
+            url={"https://babylon.net.ua/"}
           />
         </ul>
 

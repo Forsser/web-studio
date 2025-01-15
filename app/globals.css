@@ -6,10 +6,10 @@
   --background-card: #fdffbe38;
   --foreground-about: #1f1f1f;
 
-  --background-review: #0c0c0c;
+  --background-review: #121212;
 
-  --background-btn: #00e651;
-  --background-btn-hover: #37a83d;
+  --background-btn: #f85114;
+  --background-btn-hover: #ff1010dc;
 
   --fz-text-desktop: 1.8rem;
   --fz-sectionTitle-desktop: 2.5rem;
@@ -120,19 +120,19 @@ a {
 
 /* Стиль фону скролбару */
 ::-webkit-scrollbar-track {
-  background: #f0f0f0; /* Колір фону скролбару */
+  background: #515151; /* Колір фону скролбару */
   border-radius: 10px; /* Закруглені краї */
 }
 
 /* Стиль повзунка (scroll thumb) */
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Колір повзунка */
+  background: #232323; /* Колір повзунка */
   border-radius: 10px; /* Закруглені краї */
 }
 
 /* Стиль повзунка при наведенні курсору */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Темніший колір при наведенні */
+  background: #0e0e0e; /* Темніший колір при наведенні */
 }
 
 @media (max-width: 1024px) {

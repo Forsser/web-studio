@@ -1,27 +1,30 @@
 import Image from "next/image";
 import PropTypes from "prop-types";
-import styles from "@/src/style/mockup-component.module.scss";
+import style from "@/src/style/mockup-component.module.scss";
+import Arrow from "@/public/icons/arrow.svg";
+import Link from "next/link";
 
-const Mockup = ({ pcImage, mobileImage, border }) => {
+const Mockup = ({ pcImage, mobileImage, url }) => {
   return (
-    <div className={`${styles.mockupContainer} ${border}`}>
-      {/* Контейнер для макетів ПК та мобільного */}
-
-      <div className={styles.pcScreen}>
+    <div className={style.mockupContainer}>
+      <Link href={url} target="_blank" className={style.mockup__link}>
+        <Arrow className={style.mockup__svg} />
+      </Link>
+      <div className={style.pcScreen}>
         <img
           src={pcImage}
           alt="PC version of the website"
           fill
-          className={styles.screenContent}
+          className={style.screenContent}
         />
       </div>
 
-      <div className={styles.mobileScreen}>
+      <div className={style.mobileScreen}>
         <img
           src={mobileImage}
           alt="Mobile version of the website"
           fill
-          className={styles.screenContent}
+          className={style.screenContent}
         />
       </div>
     </div>

@@ -1,7 +1,7 @@
 .slider {
   position: relative;
   width: 100%;
-  padding: 4rem 0;
+  padding: 4rem 12rem;
   background: var(--background-review);
 
   border-bottom: 1px solid #373737;
@@ -41,7 +41,7 @@
   }
 
   &__button_next {
-    right: 5rem; // Стандартний відступ для великих екранів
+    right: 20rem; // Стандартний відступ для великих екранів
 
     @media (max-width: 1024px) {
       right: 3rem; // Відступ для середніх екранів
@@ -57,7 +57,7 @@
   }
 
   &__button_prev {
-    left: 5rem; // Стандартний відступ для великих екранів
+    left: 20rem; // Стандартний відступ для великих екранів
 
     @media (max-width: 1024px) {
       left: 3rem; // Відступ для середніх екранів

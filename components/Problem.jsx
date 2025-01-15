@@ -9,10 +9,8 @@ export default function Problem() {
   return (
     <section className={style.problem}>
       <div className="container">
-        <div
-          className={`title-bdr-container ${style.problem__bdr__container} `}
-        >
-          <h3 className={`gradient-title ${style.problem__mainTitle} `}>
+        <div className="title-container">
+          <h3 className={style.problem__mainTitle}>
             80% сайтів в інтернеті- гарні пустишки
           </h3>
         </div>

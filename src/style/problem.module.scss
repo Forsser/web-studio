@@ -17,18 +17,26 @@
   }
 
   &__mainTitle {
-    background: linear-gradient(to right, #ffffff, #ffffff5c);
+    background: linear-gradient(
+      to right,
+      #fff82d,
+      #ffffff
+    ); /* Від білого до темно-сірого */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Встановлення прозорого тексту */
   }
 
   &__subTitle {
+    margin-top: 4rem;
     font-size: 2rem;
     text-align: center;
     width: 100%;
   }
   &__secondTitle {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     padding: 0 1rem;
+    margin-bottom: 3rem;
   }
 
   &__footerTitle {
@@ -51,15 +59,15 @@
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
-    padding: 3rem 5vw;
-    gap: 1rem;
+    padding: 3rem 15vw;
+    gap: 2rem;
     color: rgb(255, 255, 255);
     /* Властивості для картинки */
 
     background-image: url("/img/mask-1.png");
     background-repeat: no-repeat; /* Забороняє повторення */
-    background-position: center calc(50% + 1.7rem); /* Вирівнює по центру блоку */
-    background-size: 30vw auto; /* Встановлює власні розміри (50% ширини та висоти) */
+    background-position: center calc(50% + 1.2rem); /* Вирівнює по центру блоку */
+    background-size: 20vw auto; /* Встановлює власні розміри (50% ширини та висоти) */
   }
 
   &__item {
@@ -81,8 +89,8 @@
 
   &__svg {
     position: absolute;
-    top: 0.5rem;
-    left: 1rem;
+    top: -1.5rem;
+    left: -3rem;
     @media (max-width: 1320px) {
       width: 5rem;
       height: 5rem;
@@ -99,10 +107,11 @@
     }
   }
 }
+
 .title__container {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .item__title {
@@ -159,12 +168,6 @@
     font-size: 1.4rem;
     line-height: 2.5rem;
   }
-}
-
-.problem__bdr__container::before {
-  background: linear-gradient(to right, rgb(233, 255, 107), rgb(0, 0, 0));
-  -webkit-mask: linear-gradient(rgb(233, 255, 107) 0 0) content-box,
-    linear-gradient(rgb(233, 255, 107) 0 0);
 }
 
 /* Для мобільних пристроїв (екрани до 768px) */

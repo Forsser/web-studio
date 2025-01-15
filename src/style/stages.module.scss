@@ -7,16 +7,13 @@
   padding-bottom: 5rem;
 
   &__title {
-    background: linear-gradient(to right, #000000, #6767674a);
+    color: #423fef;
+    margin-bottom: 3rem;
   }
-}
-.steps__bdr__container::before {
-  background: linear-gradient(to right, rgb(35, 35, 35), rgb(255, 255, 255));
-  -webkit-mask: linear-gradient(rgb(35, 35, 35), rgb(255, 255, 255)) content-box,
-    linear-gradient(rgb(35, 35, 35), rgb(255, 255, 255));
 }
 
 .stepsContainer {
+  width: 80%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -24,6 +21,7 @@
   text-align: center;
   padding: 40px;
   position: relative;
+  margin: 0 auto;
 }
 
 .step {
@@ -78,30 +76,30 @@
   left: 5rem;
   width: 90%;
   height: 0.1rem;
-  background-color: #e4f455c1;
+  background-color: #9daefa35;
   z-index: 1;
 }
 
 .line .pulse {
   position: absolute;
-  top: -0.8rem;
+  top: -0.9rem;
   left: 0;
   width: 2rem;
   height: 2rem;
 
-  background-color: #e7fd5b;
-  box-shadow: 0px 0px 61px 21px rgb(238, 255, 56);
+  background-color: rgba(119, 107, 251, 0.6);
+  box-shadow: 0px 0px 3.5rem 1.5rem rgba(73, 56, 255, 0.67);
   border-radius: 50%;
-  animation: pulseLine 7s linear infinite;
+  animation: pulseLine 6s linear infinite;
 }
 
 @keyframes pulseLine {
   0% {
-    transform: translateX(0);
+    transform: translateX(2rem);
     opacity: 1;
   }
   100% {
-    transform: translateX(calc(80vw - 2rem)); /* Рух до кінця лінії */
+    transform: translateX(calc(65vw - 2rem)); /* Рух до кінця лінії */
     opacity: 1;
   }
 }

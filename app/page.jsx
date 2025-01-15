@@ -11,7 +11,7 @@ import Team from "@/components/Team";
 import FAQAccordion from "@/components/FAQAccordion";
 import Advantages from "@/components/Advantages";
 import SpecializationPage from "@/components/SpecializationPage";
-
+import Garant from "@/components/Garant";
 export default function Home() {
   return (
     <>
@@ -22,6 +22,7 @@ export default function Home() {
       <Example />
       <Feedback />
       <Problem />
+      <Garant />
       <Review />
       <ApplicationForm />
       <Steps />

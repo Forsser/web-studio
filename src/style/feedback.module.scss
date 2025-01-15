@@ -1,12 +1,13 @@
 .feedback {
   position: relative;
-  background: var(--background);
+  background: var(--background-review);
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column; /* Щоб розташувати елементи вертикально */
+  border-bottom: 1px solid #373737;
 
   &__title {
     font-size: 3rem; /* Розмір тексту для великих екранів */
