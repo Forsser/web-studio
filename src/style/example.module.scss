@@ -1,11 +1,11 @@
 .example {
   position: relative;
-
+  background: #ffffff;
   height: 100%;
   padding-bottom: 5rem;
 
   &__title {
-    background: linear-gradient(to right, #ffffff, #ffffff5c);
+    color: #2c29dc;
   }
 
   &__container {
@@ -13,7 +13,7 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
+
     flex-wrap: wrap;
     gap: 2rem;
 
@@ -40,12 +40,6 @@
       opacity: 0;
     }
   }
-}
-
-.example__bdr__container::before {
-  background: linear-gradient(to right, rgb(81, 75, 255), rgb(0, 0, 0));
-  -webkit-mask: linear-gradient(rgb(81, 75, 255) 0 0) content-box,
-    linear-gradient(rgb(81, 75, 255) 0 0);
 }
 
 .card__info {

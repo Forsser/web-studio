@@ -1,28 +1,19 @@
 .specialization {
   position: relative;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(125, 128, 128, 1) 100%
-  );
+  background: #ffff;
 
   padding: 0 0 8rem 0;
 }
 
-.specialization__br__container::before {
-  background: linear-gradient(to right, rgb(81, 75, 255), rgb(0, 0, 0));
-  -webkit-mask: linear-gradient(rgb(81, 75, 255) 0 0) content-box,
-    linear-gradient(rgb(81, 75, 255) 0 0);
-}
 .specialization__title {
-  background: linear-gradient(to right, #ffffff, #ffffff5c);
+  color: #2c29dc;
 }
 
 .specialization__list {
   display: flex;
   flex-direction: row;
   padding: 3rem 0;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -33,82 +24,108 @@
 .specialization__item {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  align-items: stretch;
+  width: 23%;
   min-height: 100%;
+  flex-grow: 1;
+  border-radius: 1rem;
+  background: var(--background-card);
+  box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(171, 180, 149, 0.551);
 
   h4 {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    background: linear-gradient(
-      to right,
-      #7e7efb,
-      #ffffff2f
-    ); /* Від білого до темно-сірого */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #0f100d;
+  }
+}
+
+.item__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.specialization__img {
+  transition: all 0.2s linear;
+
+  &:hover {
+    transform: scale(1.2);
   }
 }
 
 .item__text {
   position: relative;
   display: flex;
-
+  justify-content: space-between;
   margin-bottom: 2rem;
+  padding: 1rem;
+}
 
-  button {
-    position: absolute;
-    bottom: -7rem;
-    right: 1rem;
-    padding: 1rem;
-    border: 1px solid #000000;
-    background: #151515;
-    color: #8e8e8e;
-    border-radius: 1.5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: all 0.2s linear;
+.item__button {
+  width: 5rem;
+  height: 5rem;
+  color: #2c29dc;
+  transition: all 0.2s linear;
+  cursor: pointer;
 
-    &:hover {
-      cursor: pointer;
-      background: #f8f8f8;
-      color: #000000;
-    }
+  &:hover {
+    color: #605df7;
   }
+  &:active {
+    color: #605df7;
+  }
+}
+
+.item__button.open {
+  transform: rotate(135deg);
 }
 
 .item__img {
-  width: 100%;
-  height: 100%;
+  display: flex;
+
+  flex: 1;
   overflow: hidden;
-  border-radius: 1.5rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.item__description {
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  color: #030403;
+}
+
+.additionalText {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 0%;
+  max-height: 0%;
+  opacity: 0;
+  width: 100%;
+  top: 6rem;
+  left: 0rem;
+
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #fdffe28e;
+  backdrop-filter: blur(1.2rem);
+  padding: 0;
+}
+
+.additionalText.open {
+  min-height: 100%;
+  max-height: 100%;
+  width: 100%;
+  opacity: 1;
 }
 
 /* Зсув кожного елемента при "залипанні"  Зсув кожного елемента при "залипанні"*/
-
-/* .item1 {
-  top: 5rem;
-  background: #6384e7;
-}
-.item2 {
-  top: 8rem; 
-  background: #272827;
-}
-.item3 {
-  top: 11rem; 
-
-  background: #f3f6ff;
-  h4 {
-    color: #000000;
-  }
-}
-.item4 {
-  top: 14rem; 
-  h4 {
-    color: #000000;
-  }
-  background: #a0fcf3;
-}  */
 
 /* Для планшетів (екрани до 1024px) */
 @media (max-width: 1024px) {

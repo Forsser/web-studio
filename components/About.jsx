@@ -1,5 +1,5 @@
 import style from "@/src/style/about.module.scss";
-import Svg from "@/public/icons/smile.svg";
+
 import Specialization from "@/components/Specialization";
 
 export default function About() {
@@ -7,11 +7,12 @@ export default function About() {
     <section id="about" className={style.about}>
       <div className="container">
         <div className="title-container">
-          <div className={`title-bdr-container ${style.bdr__container} `}>
+          {/* <div className={`title-bdr-container ${style.bdr__container} `}>
             <h3 className={`gradient-title ${style.about__title} `}>
               4 причини вибрати нас
             </h3>
-          </div>
+          </div> */}
+          <h3 className={style.about__title}> 4 причини вибрати нас</h3>
         </div>
 
         <div className={style.light}></div>
@@ -20,10 +21,11 @@ export default function About() {
             <div className={style.item__container}>
               {/* <Svg alt="Smile" width="50px" height="50px" /> */}
               <div className="text__container">
-                <p className={style.item__title}>
-                  Створюємо красивий дизайн, що продає
+                <p className={style.item__title}>Створюємо найсильніші сайти</p>
+                <p>
+                  Ваш сайт буде залучати найбільше заявкою за рахунок стратегії,
+                  правильної структури, проданих тез і продуманих смислів
                 </p>
-                <p>Унікальний, продає, відрізняється від конкурентів дизайн</p>
               </div>
             </div>
           </li>
@@ -31,10 +33,12 @@ export default function About() {
             <div className={style.item__container}>
               {/* <Svg alt="Smile" width="50px" height="50px" /> */}
               <div className="text__container">
-                <p className={style.item__title}>
-                  Сайт буде відразу готовий до СЕО просування та реклами
+                <p className={style.item__title}>Розробляємо стратегію</p>
+                <p>
+                  Аналізуємо ринок, прописуємо болі та їх рішення, створюємо
+                  унікальну пропозицію для клієнта, що підштовхує її залишити
+                  заявку
                 </p>
-                <p>Зрозумілі клієнтам сайти, одразу готові до реклами</p>
               </div>
             </div>
           </li>
@@ -42,10 +46,11 @@ export default function About() {
             <div className={style.item__container}>
               {/* <Svg alt="Smile" width="50px" height="50px" /> */}
               <div className="text__container">
-                <p className={style.item__title}>
-                  Зручне та просте керування сайтом
+                <p className={style.item__title}>Поетапна оплата за 30%</p>
+                <p>
+                  Для вашої зручності починаємо працювати при оплаті 30%, далі
+                  оплата розбивається на 40% та 30%
                 </p>
-                <p>Проводимо навчання по сайту</p>
               </div>
             </div>
           </li>
@@ -58,11 +63,10 @@ export default function About() {
                 height="50px"
               /> */}
               <div className="text__container">
-                <p className={style.item__title}>Сучасні технології</p>
+                <p className={style.item__title}>Працюємо у термін </p>
                 <p>
-                  Виконуємо розробку вашого сайту, на новітніх технологіях, що
-                  надає перевагу у швидкості, продуктивності, СЕО над
-                  конкурентами
+                  Ми не беремо більше проектів, ніж можемо встигнути, щоб вся
+                  робота виконувалася у строк
                 </p>
               </div>
             </div>

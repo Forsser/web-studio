@@ -73,6 +73,9 @@ a {
 .title-container {
   display: flex;
   justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .title-bdr-container {

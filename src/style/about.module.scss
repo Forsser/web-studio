@@ -1,20 +1,13 @@
 .about {
   position: relative;
   width: 100%;
-
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   z-index: 2;
-
   background: #fffff3;
 
-  /* Додаємо псевдоелемент для рамки */
-  /*  .bdr__container::before {
-    background: linear-gradient(to right, rgb(233, 255, 107), rgb(0, 0, 0));
-    -webkit-mask: linear-gradient(rgb(233, 255, 107) 0 0) content-box,
-      linear-gradient(rgb(233, 255, 107) 0 0);
-  } */
-
   &__title {
-    background: #000000;
+    color: #2c29dc;
   }
 
   &__list {

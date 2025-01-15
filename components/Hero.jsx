@@ -2,7 +2,7 @@ import style from "../src/style/hero.module.scss";
 import ParticleAnimation from "@/components/ParticleAnimation";
 import FramerComponent from "@/components/FrameComponent";
 import HeroForm from "@/components/HeroForm";
-import Smile from "@/public/icons/smile.svg";
+
 import { getHeroData } from "@/lib/api/hero";
 import up from "@/public/img/up.png";
 

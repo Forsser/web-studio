@@ -2,13 +2,13 @@ import Image from "next/image";
 import PropTypes from "prop-types";
 import styles from "@/src/style/mockup-component.module.scss";
 
-const MockupComponent = ({ pcImage, mobileImage, border }) => {
+const Mockup = ({ pcImage, mobileImage, border }) => {
   return (
     <div className={`${styles.mockupContainer} ${border}`}>
-      {/* Контейнер для макету ПК */}
+      {/* Контейнер для макетів ПК та мобільного */}
 
       <div className={styles.pcScreen}>
-        <Image
+        <img
           src={pcImage}
           alt="PC version of the website"
           fill
@@ -16,10 +16,8 @@ const MockupComponent = ({ pcImage, mobileImage, border }) => {
         />
       </div>
 
-      {/* Контейнер для макету мобільного */}
-
       <div className={styles.mobileScreen}>
-        <Image
+        <img
           src={mobileImage}
           alt="Mobile version of the website"
           fill
@@ -30,4 +28,4 @@ const MockupComponent = ({ pcImage, mobileImage, border }) => {
   );
 };
 
-export default MockupComponent;
+export default Mockup;
