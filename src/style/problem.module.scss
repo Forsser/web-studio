@@ -16,13 +16,11 @@
   }
 
   &__mainTitle {
-    background: linear-gradient(
-      to right,
-      #fff82d,
-      #ffffff
-    ); /* Від білого до темно-сірого */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Встановлення прозорого тексту */
+    display: inline-block;
+    color: var(--title-black-color);
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(19, 19, 19, 0.551);
+    padding: 0 5rem;
   }
 
   &__subTitle {
@@ -95,6 +93,8 @@
     @media (max-width: 1320px) {
       width: 5rem;
       height: 5rem;
+      top: 0rem;
+      left: 0rem;
     }
 
     @media (max-width: 1024px) {
@@ -125,7 +125,7 @@
 .item__text {
   font-size: 1.5rem;
   line-height: 3rem;
-
+  color: #cccccc;
   border-radius: 1.5rem;
 }
 
@@ -137,7 +137,9 @@
 
 /* Для планшетів (екрани до 1024px) */
 @media (max-width: 1024px) {
-  .problem__mainTitle,
+  .problem {
+    padding-top: 3rem;
+  }
   .problem__secondTitle {
     font-size: 3rem;
   }
@@ -173,7 +175,6 @@
 
 /* Для мобільних пристроїв (екрани до 768px) */
 @media (max-width: 768px) {
-  .problem__mainTitle,
   .problem__secondTitle {
     font-size: 2.5rem;
   }
@@ -206,7 +207,6 @@
 
 /* Для дуже маленьких екранів (екрани до 480px) */
 @media (max-width: 480px) {
-  .problem__mainTitle,
   .problem__secondTitle {
     font-size: 2rem;
   }

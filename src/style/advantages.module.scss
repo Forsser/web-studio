@@ -33,13 +33,7 @@
 
   &__title {
     font-weight: bold;
-    background: linear-gradient(
-      to right,
-      #fff82d,
-      #ffffff
-    ); /* Від білого до темно-сірого */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* Встановлення прозорого тексту */
+    color: var(--title-black-color);
   }
 
   &__text {
@@ -56,3 +50,24 @@
   display: flex;
   flex-direction: column;
 }
+
+//адаптація
+@media (max-width: 1024px) {
+  .advantages {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    width: 100%;
+  }
+}
+ */

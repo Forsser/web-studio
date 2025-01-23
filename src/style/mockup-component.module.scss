@@ -10,21 +10,21 @@
 
   padding: 1rem;
 
-  box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(171, 180, 149, 0.551);
+  box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(217, 218, 216, 0.551);
   border-radius: 1.5rem;
   width: 48%;
   height: auto;
 }
 
 .pcScreen {
-  width: 40rem;
+  width: 65%;
   height: auto;
 }
 .mobileScreen {
   position: absolute;
   top: 0rem;
   right: 1rem;
-  width: 26rem;
+  width: 40%;
   height: auto;
 }
 
@@ -49,7 +49,7 @@
 .mockup__svg {
   width: 5rem; /* SVG займає всю область посилання */
   height: 5rem;
-  color: #2c29dc;
+  color: var(--title-white-color);
   transition: all 0.2s linear;
 
   &:hover {
@@ -57,5 +57,65 @@
   }
   &:active {
     color: #7270ff;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mockup__svg {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mockupContainer {
+    /* Змінюємо напрямок на колонку */
+    align-items: center; /* Центруємо елементи */
+    justify-content: center;
+    width: 100%; /* Робимо контейнер ширшим для невеликих екранів */
+    gap: 2rem; /* Збільшуємо відступ між елементами */
+  }
+
+  .pcScreen {
+    position: relative; /* Прибираємо абсолютне позиціювання */
+    width: 50%; /* Зменшуємо ширину зображень пропорційно */
+  }
+  .mobileScreen {
+    position: relative; /* Прибираємо абсолютне позиціювання */
+    width: 33%; /* Зменшуємо ширину зображень пропорційно */
+  }
+
+  .mockup__link {
+    top: 0rem; /* Зміщуємо посилання над блоком */
+
+    right: 1rem; /* Центруємо посилання */
+  }
+
+  .mockup__svg {
+    width: 4rem; /* Зменшуємо розмір SVG */
+    height: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mockupContainer {
+    width: 100%; /* Контейнер займає всю ширину */
+    padding: 0.5rem; /* Менший відступ */
+  }
+
+  .pcScreen,
+  .mobileScreen {
+    width: 70%; /* Зображення розтягується на всю ширину */
+  }
+
+  .mockup__link {
+    top: 0rem; /* Зміщуємо посилання над блоком */
+
+    right: 1rem; /* Центруємо посилання */
+  }
+
+  .mockup__svg {
+    width: 5rem; /* Зменшуємо ще більше для компактності */
+    height: 5rem;
   }
 }

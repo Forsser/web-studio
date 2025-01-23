@@ -31,13 +31,7 @@
   align-items: center;
   font-weight: 700;
   font-size: 3rem;
-  background: linear-gradient(
-    to right,
-    #fff82d,
-    #ffffff
-  ); /* Від білого до темно-сірого */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Встановлення прозорого тексту */
+  color: var(--title-black-color);
 }
 
 .hero__subtext {
@@ -73,7 +67,7 @@
   }
 
   .hero__text {
-    font-size: 6rem; /* Зменшення розміру шрифту */
+    font-size: 4rem; /* Зменшення розміру шрифту */
   }
 
   .hero__subtext {
@@ -81,6 +75,15 @@
     width: 70%;
     margin-top: 2rem;
     padding: 1.5rem;
+  }
+
+  .hero__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10rem;
+    gap: 3rem;
+    margin-top: 3rem;
   }
 }
 
@@ -113,6 +116,15 @@
     width: 100%;
     margin-top: 1.5rem;
     padding: 1rem;
+  }
+  .hero__footer {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero__footer {
+    padding: 0rem;
   }
 }
 

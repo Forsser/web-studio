@@ -7,11 +7,6 @@ export default function About() {
     <section id="about" className={style.about}>
       <div className="container">
         <div className="title-container">
-          {/* <div className={`title-bdr-container ${style.bdr__container} `}>
-            <h3 className={`gradient-title ${style.about__title} `}>
-              4 причини вибрати нас
-            </h3>
-          </div> */}
           <h3 className={style.about__title}> 4 причини вибрати нас</h3>
         </div>
 
@@ -20,7 +15,7 @@ export default function About() {
           <li className={style.about__item}>
             <div className={style.item__container}>
               {/* <Svg alt="Smile" width="50px" height="50px" /> */}
-              <div className="text__container">
+              <div className={style.text__container}>
                 <p className={style.item__title}>Створюємо найсильніші сайти</p>
                 <p>
                   Ваш сайт буде залучати найбільше заявкою за рахунок стратегії,
@@ -32,7 +27,7 @@ export default function About() {
           <li className={style.about__item}>
             <div className={style.item__container}>
               {/* <Svg alt="Smile" width="50px" height="50px" /> */}
-              <div className="text__container">
+              <div className={style.text__container}>
                 <p className={style.item__title}>Розробляємо стратегію</p>
                 <p>
                   Аналізуємо ринок, прописуємо болі та їх рішення, створюємо
@@ -45,7 +40,7 @@ export default function About() {
           <li className={style.about__item}>
             <div className={style.item__container}>
               {/* <Svg alt="Smile" width="50px" height="50px" /> */}
-              <div className="text__container">
+              <div className={style.text__container}>
                 <p className={style.item__title}>Поетапна оплата за 30%</p>
                 <p>
                   Для вашої зручності починаємо працювати при оплаті 30%, далі
@@ -62,7 +57,7 @@ export default function About() {
                 width="50px"
                 height="50px"
               /> */}
-              <div className="text__container">
+              <div className={style.text__container}>
                 <p className={style.item__title}>Працюємо у термін </p>
                 <p>
                   Ми не беремо більше проектів, ніж можемо встигнути, щоб вся

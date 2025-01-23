@@ -4,7 +4,7 @@ const Garant = () => {
   return (
     <section className={style.garant}>
       <div className="container">
-        <div className="title-container">
+        <div className="title-black-container">
           <h3 className={style.garant__title}>
             Гарантія коригування результатів
           </h3>

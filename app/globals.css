@@ -11,13 +11,16 @@
   --background-btn: #f85114;
   --background-btn-hover: #ff1010dc;
 
-  --fz-text-desktop: 1.8rem;
-  --fz-sectionTitle-desktop: 3rem;
-  --fz-sectionSubTitle-desktop: 2rem;
+  --title-black-color: #7c62ff;
+  --title-white-color: #6445ff;
 
+  --fz-title-desktop: 3rem;
+  --fz-sectionTitle-desktop: 2rem;
+  --fz-text-desktop: 1.8rem;
+
+  --fz-title-mobile: 2.5rem;
+  --fz-sectionTitle-mobile: 2rem;
   --fz-text-mobile: 1.6rem;
-  --fz-sectionTitle-mobile: 2.5rem;
-  --fz-sectionSubTitle-mobile: 2rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -74,10 +77,24 @@ a {
 .title-container {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  font-size: var(--fz-title-desktop);
   font-weight: bold;
   text-transform: uppercase;
 
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.title-black-container {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  font-size: var(--fz-title-desktop);
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin: 0 auto;
   margin-bottom: 3rem;
 }
 
@@ -118,13 +135,26 @@ a {
 
 @media (max-width: 1024px) {
   .container {
+    max-width: 95rem;
     padding: 1.5rem 3rem;
+  }
+  .title-container,
+  .title-black-container {
+    display: flex;
+    justify-content: center;
+    font-size: var(--fz-title-mobile);
   }
 }
 
 @media (max-width: 768px) {
   .container {
     padding: 1rem 2rem;
+  }
+  .title-container,
+  .title-black-container {
+    display: flex;
+    justify-content: center;
+    font-size: var(--fz-title-mobile);
   }
 }
 

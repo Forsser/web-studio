@@ -3,18 +3,12 @@
   background: #ffffff;
 
   &__title {
+    display: inline-block;
+    box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(217, 218, 216, 0.551);
+    color: var(--title-white-color);
+    border-radius: 1rem;
     text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-
-    background: linear-gradient(
-      to right,
-      #101010,
-      #d2f700
-    ); /* Від білого до темно-сірого */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    padding: 0 5rem;
     margin-bottom: 5rem;
   }
 
@@ -55,13 +49,6 @@
 }
 
 @media (max-width: 1024px) {
-  .team__title {
-    font-size: 4rem;
-    margin-left: 1.5rem;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-  }
-
   .team__subtext {
     font-size: 1.8rem;
     width: 70%;
@@ -77,13 +64,6 @@
 }
 
 @media (max-width: 768px) {
-  .team__title {
-    font-size: 3rem;
-    margin-left: 1rem;
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
-  }
-
   .team__subtext {
     font-size: 1.6rem;
     width: 90%;
@@ -91,6 +71,8 @@
 
   .items {
     flex-direction: column;
+
+    align-items: center;
     gap: 2rem;
   }
 
@@ -100,13 +82,6 @@
 }
 
 @media (max-width: 480px) {
-  .team__title {
-    font-size: var(--fz-sectionTitle-mobile);
-    margin-left: 0.5rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-
   .team__subtext {
     font-size: var(--fz-text-mobile);
     width: 100%;

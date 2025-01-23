@@ -3,16 +3,15 @@
   width: 100%;
 
   z-index: 2;
-  background: #fffff3;
+  background: #ffffff;
 
   &__title {
-    background: linear-gradient(
-      to right,
-      #101010,
-      #d2f700
-    ); /* Від білого до темно-сірого */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(217, 218, 216, 0.551);
+    color: var(--title-white-color);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0 5rem;
   }
 
   &__list {
@@ -32,7 +31,7 @@
     font-size: 2rem;
 
     border-radius: 1.5rem;
-    box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(171, 180, 149, 0.551);
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem rgba(217, 218, 216, 0.551);
   }
 }
 
@@ -53,16 +52,17 @@
   border-radius: 1.5rem;
 }
 
+.text__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Для планшетів (екрани до 1024px) */
 @media (max-width: 1024px) {
   .about {
     margin-top: 10rem;
     padding: 6rem 0;
-  }
-
-  .about__title {
-    font-size: 4rem;
-    margin-left: 1rem;
   }
 
   .about__list {
@@ -73,127 +73,29 @@
   .about__item {
     width: 100%; /* Займає всю ширину */
   }
-
-  .light {
-    width: 50vw; /* Більше світло на маленьких екранах */
-    height: 50vw;
-  }
 }
 
 /* Для мобільних пристроїв (екрани до 768px) */
 @media (max-width: 768px) {
   .about {
-    margin-top: 8rem;
+    margin-top: 3rem;
     padding: 4rem 0;
-  }
-
-  .about__title {
-    font-size: 3.5rem;
-    margin-left: 0.5rem;
   }
 
   .about__list {
     padding: 2rem 2rem;
     gap: 1rem;
   }
-
-  .light {
-    width: 50vw; /* Більше світло на маленьких екранах */
-    height: 50vw;
-  }
 }
 
 /* Для дуже маленьких екранів (екрани до 480px) */
 @media (max-width: 480px) {
   .about {
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding: 3rem 0;
-  }
-
-  .about__title {
-    font-size: 2.5rem;
-    margin-left: 0.5rem;
   }
 
   .about__list {
     padding: 1rem;
-  }
-
-  .light {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-/* Для планшетів (екрани до 1024px) */
-@media (max-width: 1024px) {
-  .about {
-    margin-top: 10rem;
-    padding: 6rem 0;
-  }
-
-  .about__title {
-    font-size: 4rem;
-    margin-left: 1rem;
-  }
-
-  .about__list {
-    padding: 3rem 10rem;
-    gap: 1.5rem;
-  }
-
-  .about__item {
-    width: 100%;
-  }
-
-  .light {
-    width: 50vw; /* Більше світло на маленьких екранах */
-    height: 50vw;
-  }
-}
-
-/* Для мобільних пристроїв (екрани до 768px) */
-@media (max-width: 768px) {
-  .about {
-    margin-top: 8rem;
-    padding: 4rem 0;
-  }
-
-  .about__title {
-    font-size: 3.5rem;
-    margin-left: 0.5rem;
-  }
-
-  .about__list {
-    padding: 2rem 2rem;
-    gap: 1rem;
-  }
-
-  .light {
-    width: 70vw; /* Більше світло на маленьких екранах */
-    height: 70vw;
-  }
-}
-
-/* Для дуже маленьких екранів (екрани до 480px) */
-@media (max-width: 480px) {
-  .about {
-    margin-top: 5rem;
-    padding: 3rem 0;
-  }
-
-  .about__title {
-    font-size: 2.5rem;
-    margin-left: 0.5rem;
-  }
-
-  .about__list {
-    padding: 1rem;
-    gap: 1.5rem;
-  }
-
-  .light {
-    width: 90vw; /* Більше світло на маленьких екранах */
-    height: 90vw;
   }
 }

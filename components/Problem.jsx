@@ -9,7 +9,7 @@ export default function Problem() {
   return (
     <section className={style.problem}>
       <div className="container">
-        <div className="title-container">
+        <div className="title-black-container">
           <h3 className={style.problem__mainTitle}>
             80% сайтів в інтернеті- гарні пустишки
           </h3>

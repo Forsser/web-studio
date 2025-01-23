@@ -6,13 +6,12 @@
   height: 100%;
 
   &__title {
-    background: linear-gradient(
-      to right,
-      #101010,
-      #d2f700
-    ); /* Від білого до темно-сірого */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(217, 218, 216, 0.551);
+    color: var(--title-white-color);
+    border-radius: 1rem;
+    text-align: center;
+    padding: 0 5rem;
     margin-bottom: 3rem;
   }
 }
@@ -104,7 +103,7 @@
     opacity: 1;
   }
   100% {
-    transform: translateX(calc(65vw - 2rem)); /* Рух до кінця лінії */
+    transform: translateX(calc(55vw - 2rem)); /* Рух до кінця лінії */
     opacity: 1;
   }
 }
@@ -116,11 +115,6 @@
 
 /* Для планшетів (екрани до 1024px) */
 @media (max-width: 1024px) {
-  .steps__title {
-    font-size: 4rem;
-    margin-top: 2rem;
-  }
-
   .stepsContainer {
     flex-direction: column;
     padding: 20px;
@@ -152,8 +146,8 @@
 
 /* Для мобільних пристроїв (екрани до 768px) */
 @media (max-width: 768px) {
-  .steps__title {
-    font-size: 3.5rem;
+  .steps {
+    padding-top: 3rem;
   }
 
   .stepsContainer {
@@ -194,12 +188,6 @@
 
 /* Для дуже маленьких екранів (екрани до 480px) */
 @media (max-width: 480px) {
-  .steps__title {
-    font-size: 2.5rem;
-    margin-top: 1rem;
-    justify-content: center;
-  }
-
   .stepsContainer {
     padding: 10px;
   }

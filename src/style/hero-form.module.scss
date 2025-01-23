@@ -51,13 +51,14 @@
 
 .title__accent {
   font-weight: bold;
-  background: linear-gradient(
-    to right,
-    #fff82d,
-    #ffffff
-  ); /* Від білого до темно-сірого */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--title-black-color);
+}
+
+@media (max-width: 1024px) {
+  .form {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {

@@ -4,13 +4,12 @@
 }
 
 .specialization__title {
-  background: linear-gradient(
-    to right,
-    #101010,
-    #d2f700
-  ); /* Від білого до темно-сірого */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(217, 218, 216, 0.551);
+  color: var(--title-white-color);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 0 5rem;
 }
 
 .specialization__list {
@@ -33,8 +32,8 @@
   min-height: 100%;
   flex-grow: 1;
   border-radius: 1rem;
-  background: var(--background-card);
-  box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(171, 180, 149, 0.551);
+
+  box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(217, 218, 216, 0.551);
 
   h4 {
     font-size: 2rem;
@@ -133,11 +132,6 @@
 
 /* Для планшетів (екрани до 1024px) */
 @media (max-width: 1024px) {
-  .specialization__title {
-    font-size: 4rem;
-    margin-bottom: 3rem;
-  }
-
   .specialization__list {
     gap: 1.5rem;
   }
@@ -164,10 +158,6 @@
 
 /* Для мобільних пристроїв (екрани до 768px) */
 @media (max-width: 768px) {
-  .specialization__title {
-    font-size: 3rem;
-  }
-
   .specialization__list {
     gap: 1rem;
   }
@@ -187,10 +177,6 @@
 
 /* Для дуже маленьких екранів (екрани до 480px) */
 @media (max-width: 480px) {
-  .specialization__title {
-    font-size: 2.5rem;
-  }
-
   .specialization__list {
     gap: 0.5rem;
   }

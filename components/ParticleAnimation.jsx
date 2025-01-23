@@ -60,7 +60,7 @@ export default function ParticlesBckg() {
           },
           particles: {
             color: {
-              value: "#fff5b3",
+              value: "#b9b3ff",
             },
 
             move: {
@@ -98,7 +98,7 @@ export default function ParticlesBckg() {
             },
             shadow: {
               enable: true, // Увімкнути тінь
-              color: "#fff25e", // Колір тіні (також колір сяйва)
+              color: "#444bff", // Колір тіні (також колір сяйва)
               blur: 20, // Інтенсивність розмиття (розмір сяйва)
               offset: {
                 x: 0, // Зсув по X

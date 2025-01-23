@@ -5,7 +5,12 @@ export default function Team() {
   return (
     <section className={style.team}>
       <div className="container">
-        <h3 className={style.team__title}>Хто працює над вашим веб-сайтом?</h3>
+        <div className="title-container">
+          <h3 className={style.team__title}>
+            Хто працює над вашим веб-сайтом?
+          </h3>
+        </div>
+
         <div className={style.team__subtext}>
           <p>
             Нашій команді дуже важливо, щоб кожен клієнт отримав якісний ремонт

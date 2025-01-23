@@ -116,9 +116,12 @@ const FormAplication = () => {
   return (
     <div className={style.aplication}>
       <div className="container">
-        <h3 className={style.aplication__title}>
-          Не визначилися який сайт вам потрібен?
-        </h3>
+        <div className="title-black-container">
+          <h3 className={style.aplication__title}>
+            Не визначилися який сайт вам потрібен?
+          </h3>
+        </div>
+
         <div className={style.form__container}>
           <p className={style.aplication__subtitle}>
             Пройдіть тест за 1 хвилину і ми допоможемо вам
