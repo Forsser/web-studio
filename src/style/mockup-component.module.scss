@@ -7,9 +7,9 @@
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(0.5rem);
-  background: var(--background-card);
+
   padding: 1rem;
-  border: 1px solid rgba(103, 102, 109, 0.4509803922);
+
   box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(171, 180, 149, 0.551);
   border-radius: 1.5rem;
   width: 48%;
@@ -17,14 +17,14 @@
 }
 
 .pcScreen {
-  width: 45rem;
+  width: 40rem;
   height: auto;
 }
 .mobileScreen {
   position: absolute;
   top: 0rem;
   right: 1rem;
-  width: 28rem;
+  width: 26rem;
   height: auto;
 }
 

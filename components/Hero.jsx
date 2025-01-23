@@ -2,6 +2,7 @@ import style from "../src/style/hero.module.scss";
 import ParticleAnimation from "@/components/ParticleAnimation";
 import FramerComponent from "@/components/FrameComponent";
 import HeroForm from "@/components/HeroForm";
+import Advantages from "@/components/Advantages";
 
 import { getHeroData } from "@/lib/api/hero";
 import up from "@/public/img/up.png";
@@ -23,11 +24,14 @@ export default async function Hero() {
             <img src={up.src} alt="arrow" className={style.hero__img} />
           </h2>
         </div>
+        <div className={style.hero__footer}>
+          <HeroForm />
+          <Advantages />
+        </div>
 
         {/* <FramerComponent /> */}
         <ParticleAnimation />
       </div>
-      <HeroForm />
     </section>
   );
 }

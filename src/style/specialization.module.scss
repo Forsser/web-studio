@@ -1,12 +1,16 @@
 .specialization {
   position: relative;
   background: #ffff;
-
-  padding: 0 0 8rem 0;
 }
 
 .specialization__title {
-  color: #423fef;
+  background: linear-gradient(
+    to right,
+    #101010,
+    #839a00
+  ); /* Від білого до темно-сірого */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .specialization__list {

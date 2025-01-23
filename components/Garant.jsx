@@ -4,9 +4,12 @@ const Garant = () => {
   return (
     <section className={style.garant}>
       <div className="container">
-        <h3 className={style.garant__title}>
-          Гарантія коригування результатів
-        </h3>
+        <div className="title-container">
+          <h3 className={style.garant__title}>
+            Гарантія коригування результатів
+          </h3>
+        </div>
+
         <p className={style.garant__text}>
           Ми хочемо відповідати за свою роботу. Якщо сайт погано працюватиме -
           ми гарантуємо коригування для покращення результату, переглянемо

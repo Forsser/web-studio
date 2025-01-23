@@ -6,6 +6,7 @@
   backdrop-filter: blur(0.5rem);
   border-radius: 2rem;
   padding: 2rem;
+  z-index: 2;
 
   &__title {
     text-align: center;

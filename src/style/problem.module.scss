@@ -1,8 +1,7 @@
 .problem {
   position: relative;
   color: aliceblue;
-  padding-bottom: 5rem;
-  margin-top: 5rem;
+
   border-bottom: 1px solid #373737;
 
   &__titleContainer {
@@ -12,7 +11,7 @@
     justify-content: center;
     gap: 8rem;
 
-    width: 60%;
+    width: 100%;
     margin: 0px auto;
   }
 
@@ -59,7 +58,9 @@
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
-    padding: 3rem 15vw;
+    padding: 0 20rem;
+    width: 100%;
+    /*   padding: 3rem 12vw; */
     gap: 2rem;
     color: rgb(255, 255, 255);
     /* Властивості для картинки */
@@ -67,7 +68,7 @@
     background-image: url("/img/mask-1.png");
     background-repeat: no-repeat; /* Забороняє повторення */
     background-position: center calc(50% + 1.2rem); /* Вирівнює по центру блоку */
-    background-size: 20vw auto; /* Встановлює власні розміри (50% ширини та висоти) */
+    background-size: 18vw auto; /* Встановлює власні розміри (50% ширини та висоти) */
   }
 
   &__item {

@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Specialization from "@/components/Specialization";
 import Example from "@/components/Example";
-import Feedback from "@/components/Feedback";
+
 import Problem from "@/components/Problem";
 import Review from "@/components/Review";
 import ApplicationForm from "@/components/ApplicationForm";
@@ -16,11 +16,11 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Advantages />
+
       <About />
       <SpecializationPage />
       <Example />
-      <Feedback />
+
       <Problem />
       <Garant />
       <Review />

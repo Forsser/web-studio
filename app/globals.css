@@ -12,7 +12,7 @@
   --background-btn-hover: #ff1010dc;
 
   --fz-text-desktop: 1.8rem;
-  --fz-sectionTitle-desktop: 2.5rem;
+  --fz-sectionTitle-desktop: 3rem;
   --fz-sectionSubTitle-desktop: 2rem;
 
   --fz-text-mobile: 1.6rem;
@@ -66,8 +66,9 @@ a {
 
 .container {
   width: 100%;
+  max-width: 140rem;
   margin: 0px auto;
-  padding: 2rem 4rem;
+  padding: 5rem 4rem 1rem 4rem;
 }
 
 .title-container {
@@ -76,30 +77,10 @@ a {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
-}
 
-.title-bdr-container {
-  display: inline-block;
-  position: relative;
-  border-radius: 3rem;
-  isolation: isolate;
   margin-bottom: 3rem;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 3rem;
-    padding: 1px;
-    -webkit-mask-composite: xor !important;
-    mask-composite: exclude !important;
-    z-index: -1;
-    pointer-events: none;
-  }
 }
+
 .gradient-title {
   display: inline-block;
   text-transform: uppercase;

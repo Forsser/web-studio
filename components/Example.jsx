@@ -1,16 +1,17 @@
 import style from "@/src/style/example.module.scss";
-import Raiduga from "@/src/img/raiduga.png";
-import RaidugaMobile from "@/src/img/raiduga-mobile.png";
-import babylon from "@/src/img/babylon.png";
-import babylonMobile from "@/src/img/babylon-mobile.png";
-import redAndDog from "@/src/img/red-and-dog.png";
-import redAndDogMobile from "@/src/img/red-and-dog-mobile.png";
-import hotches from "@/src/img/hotshoes.png";
-import hotchesMobile from "@/src/img/hotshoes-mobile.png";
-import mops from "@/src/img/mops.png";
-import mopsMobile from "@/src/img/mops-mobile.png";
-import bazhane from "@/src/img/bazhane.png";
-import bazhaneMobile from "@/src/img/bazhane-mobile.png";
+import Feedback from "@/components/Feedback";
+import Raiduga from "@/src/img/raiduga.webp";
+import RaidugaMobile from "@/src/img/raiduga-mobile.webp";
+import babylon from "@/src/img/babylon.webp";
+import babylonMobile from "@/src/img/babylon-mobile.webp";
+import redAndDog from "@/src/img/red-and-dog.webp";
+import redAndDogMobile from "@/src/img/red-and-dog-mobile.webp";
+import hotches from "@/src/img/hotshoes.webp";
+import hotchesMobile from "@/src/img/hotshoes-mobile.webp";
+import mops from "@/src/img/mops.webp";
+import mopsMobile from "@/src/img/mops-mobile.webp";
+import bazhane from "@/src/img/bazhane.webp";
+import bazhaneMobile from "@/src/img/bazhane-mobile.webp";
 import Mockup from "@/components/MockUp";
 
 export default function Example() {
@@ -55,6 +56,7 @@ export default function Example() {
 
         {/* pcImage={redAndDog.src} mobileImage={redAndDog.src}  */}
       </div>
+      <Feedback />
     </section>
   );
 }

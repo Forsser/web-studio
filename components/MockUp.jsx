@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import PropTypes from "prop-types";
 import style from "@/src/style/mockup-component.module.scss";
@@ -5,6 +6,8 @@ import Arrow from "@/public/icons/arrow.svg";
 import Link from "next/link";
 
 const Mockup = ({ pcImage, mobileImage, url }) => {
+  console.log("render mockup");
+
   return (
     <div className={style.mockupContainer}>
       <Link href={url} target="_blank" className={style.mockup__link}>
@@ -15,6 +18,7 @@ const Mockup = ({ pcImage, mobileImage, url }) => {
           src={pcImage}
           alt="PC version of the website"
           fill
+          loading="lazy"
           className={style.screenContent}
         />
       </div>
@@ -24,6 +28,7 @@ const Mockup = ({ pcImage, mobileImage, url }) => {
           src={mobileImage}
           alt="Mobile version of the website"
           fill
+          loading="lazy"
           className={style.screenContent}
         />
       </div>
