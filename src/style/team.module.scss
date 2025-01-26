@@ -81,7 +81,8 @@
 
 @media (max-width: 480px) {
   .team__title {
-    padding: 0 1rem;
+    padding: 0;
+    font-size: var(--fz-title-mobile);
   }
   .team__subtext {
     font-size: var(--fz-text-mobile);

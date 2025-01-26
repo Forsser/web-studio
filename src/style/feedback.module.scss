@@ -49,7 +49,7 @@
   }
 
   .feedback__title {
-    font-size: 1.8rem; /* Компактний розмір тексту */
+    font-size: var(--fz-sectionTitle-mobile); /* Компактний розмір тексту */
     margin-bottom: 2rem; /* Зменшуємо відступ */
   }
 }

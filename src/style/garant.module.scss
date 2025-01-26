@@ -34,12 +34,14 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .garant__text {
     width: 100%;
+    font-size: var(--fz-text-mobile);
   }
 
   .garant__title {
-    padding: 0 1rem;
+    font-size: var(--fz-title-mobile);
+    padding: 0;
   }
 }

@@ -9,7 +9,7 @@ export default function SpecializationItem({ item, isOpen, onToggle }) {
     >
       <div className={style.item__container}>
         <div className={style.item__text}>
-          <h4>{item.title}</h4>
+          <h4 className={style.item__title}>{item.title}</h4>
           <Arrow
             onClick={onToggle}
             className={`${style.item__button} ${isOpen ? style.open : ""}`}

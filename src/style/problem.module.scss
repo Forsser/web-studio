@@ -214,22 +214,28 @@
 /* Для дуже маленьких екранів (екрани до 480px) */
 @media (max-width: 480px) {
   .problem__secondTitle {
-    font-size: 2rem;
+    font-size: var(--fz-sectionTitle-mobile);
   }
 
   .problem__mainTitle {
-    padding: 0 1rem;
+    font-size: var(--fz-title-mobile);
+    padding: 0;
   }
 
   .item__title {
     width: 80%;
   }
 
-  .problem__subTitle,
+  .problem__subTitle {
+    font-size: var(--fz-text-mobile);
+    width: 100%;
+    margin: 3rem 0;
+  }
+
   .problem__footerTitle,
   .problem__footerFormTitle {
     width: 100%;
-    font-size: 1.8rem;
+    font-size: var(--fz-sectionTitle-mobile);
     margin: 3rem 0;
   }
   .problem__footerTitle {
@@ -242,19 +248,19 @@
   }
 
   .problem__item {
-    font-size: 1.8rem;
+    font-size: var(--fz-text-mobile);
     padding: 0.5rem;
   }
 
   .item__text {
-    font-size: 1.6rem;
+    font-size: var(--fz-text-mobile);
     line-height: 2.5rem;
   }
 }
 
 @media (max-width: 376px) {
   .problem__item {
-    font-size: 1.4rem;
+    font-size: var(--fz-text-mobile);
   }
 
   .item__title {

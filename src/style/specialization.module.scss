@@ -34,13 +34,12 @@
   border-radius: 1rem;
 
   box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(217, 218, 216, 0.551);
-
-  h4 {
-    font-size: var(--fz-sectionTitle-desktop);
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #0f100d;
-  }
+}
+.item__title {
+  font-size: var(--fz-sectionTitle-desktop);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0f100d;
 }
 
 .item__container {
@@ -179,12 +178,17 @@
   }
   .specialization__title {
     padding: 0 1rem;
+    font-size: var(--fz-title-mobile);
+  }
+
+  .item__title {
+    font-size: var(--fz-sectionTitle-mobile);
   }
 
   .item__text button {
     bottom: -6rem;
     right: 0.2rem;
-    font-size: 1.5rem;
+    font-size: var(--fz-text-mobile);
     padding: 0.7rem;
   }
 }

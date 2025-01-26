@@ -164,12 +164,19 @@
 /* Для дуже маленьких екранів (екрани до 480px) */
 @media (max-width: 480px) {
   .aplication__title {
-    padding: 0 1rem;
+    padding: 0;
   }
 
+  .aplication__subtitle {
+    font-size: var(--fz-sectionTitle-mobile);
+  }
   .form__container {
     width: 100%;
     padding: 1rem;
+  }
+
+  .form__title {
+    font-size: var(--fz-sectionTitle-mobile);
   }
 
   .form__input {
@@ -183,14 +190,14 @@
   .input {
     display: flex;
     align-items: flex-end;
-
+    font-size: var(--fz-text-mobile);
     width: 100%;
     border-bottom: 1px solid #222222;
   }
   .input__check {
     display: flex;
     align-items: flex-end;
-
+    font-size: var(--fz-text-mobile);
     width: 100%;
     background: #1f1f1f;
     border: 1px solid #2a2a2a;

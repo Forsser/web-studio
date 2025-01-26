@@ -96,10 +96,19 @@
   }
 
   .about__title {
-    padding: 0 1rem;
+    padding: 0;
+    font-size: var(--fz-title-mobile);
   }
 
   .about__list {
     padding: 1rem;
+  }
+
+  .item__title {
+    font-size: var(--fz-sectionTitle-mobile);
+  }
+
+  .text__container {
+    font-size: var(--fz-text-mobile);
   }
 }
