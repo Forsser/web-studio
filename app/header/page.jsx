@@ -17,9 +17,7 @@ export default function Header() {
             </div>
 
             {/* Десктопна навігація */}
-            <nav
-              className={`${styles.header__navigation} ${styles.navigation}`}
-            >
+            <nav className={`${styles.header__navigation}`}>
               <ul className={styles.navigation__list}>
                 <li className={styles.navigation__item}>
                   <Link href="#example" className={styles.navigation__link}>
@@ -46,13 +44,12 @@ export default function Header() {
                 </li>
               </ul>
             </nav>
-
-            <div className={`${styles.header__contacts} ${styles.contacts}`}>
-              <div className={styles.contacts__info}>
-                <span className={styles.contacts__phone}>
-                  +38 (000) 000-00-00
-                </span>
-              </div>
+          </div>
+          <div className={`${styles.header__contacts} ${styles.contacts}`}>
+            <div className={styles.contacts__info}>
+              <span className={styles.contacts__phone}>
+                +38 (000) 000-00-00
+              </span>
             </div>
           </div>
         </div>

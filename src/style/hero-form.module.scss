@@ -10,7 +10,7 @@
 
   &__title {
     text-align: center;
-    font-size: 2rem;
+    font-size: var(--fz-sectionTitle-desktop);
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -37,7 +37,7 @@
     padding: 1rem;
     border: 0.1rem solid #55151595;
     border-radius: 1rem;
-    font-size: 1.5rem;
+    font-size: var(--fz-text-desktop);
     background: #f85114;
     color: #fffde6;
     cursor: pointer;

@@ -37,7 +37,7 @@
 .hero__subtext {
   display: inline-flex;
   align-items: end;
-  font-size: 2rem;
+  font-size: var(--fz-sectionTitle-desktop);
   margin-top: 3rem;
   padding: 1rem;
   backdrop-filter: blur(1rem);

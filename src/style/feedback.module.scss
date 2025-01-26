@@ -9,7 +9,7 @@
   flex-direction: column; /* Щоб розташувати елементи вертикально */
 
   &__title {
-    font-size: 3rem; /* Розмір тексту для великих екранів */
+    font-size: var(--fz-title-form-desktop);
     color: #1b1b1b;
     margin-bottom: 5rem; /* Відступ між заголовком та іншими елементами */
     text-align: center;

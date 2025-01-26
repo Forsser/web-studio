@@ -6,8 +6,6 @@ import Arrow from "@/public/icons/arrow.svg";
 import Link from "next/link";
 
 const Mockup = ({ pcImage, mobileImage, url }) => {
-  console.log("render mockup");
-
   return (
     <div className={style.mockupContainer}>
       <Link href={url} target="_blank" className={style.mockup__link}>

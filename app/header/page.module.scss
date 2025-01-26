@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
 
-  font-size: 1.6rem;
+  font-size: var(--fz-text-desktop);
   justify-content: space-between;
 }
 
@@ -21,6 +21,7 @@
   width: 80%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
   &__list {
     display: flex;
@@ -56,9 +57,11 @@
 }
 
 .contacts__info {
+  font-size: var(--fz-text-desktop);
 }
 
 .logo {
+  width: 10%;
   z-index: 1001; // Щоб лого було над мобільним меню
 }
 /* Для планшетів (екрани до 1024px) */

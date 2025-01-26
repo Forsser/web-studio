@@ -19,7 +19,7 @@
     gap: 2rem;
     font-size: 2rem;
     width: 50%;
-    margin: 5rem auto;
+    margin: 0rem auto 2rem;
     color: #3b3b3b;
   }
 }
@@ -50,7 +50,6 @@
 
 @media (max-width: 1024px) {
   .team__subtext {
-    font-size: 1.8rem;
     width: 70%;
   }
 
@@ -65,7 +64,6 @@
 
 @media (max-width: 768px) {
   .team__subtext {
-    font-size: 1.6rem;
     width: 90%;
   }
 
@@ -82,6 +80,9 @@
 }
 
 @media (max-width: 480px) {
+  .team__title {
+    padding: 0 1rem;
+  }
   .team__subtext {
     font-size: var(--fz-text-mobile);
     width: 100%;
@@ -90,10 +91,6 @@
   .item {
     width: 100%;
     padding: 0.5rem;
-  }
-
-  .item__name {
-    font-size: 1.8rem;
   }
 
   .item__position {

@@ -17,7 +17,7 @@
   &__text {
     width: 45%;
     margin: 0 auto;
-    font-size: 1.8rem;
+    font-size: var(--fz-text-desktop);
 
     text-align: center;
     color: #e0e0e0;
@@ -31,5 +31,15 @@
   }
   .garant__text {
     width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .garant__text {
+    width: 100%;
+  }
+
+  .garant__title {
+    padding: 0 1rem;
   }
 }

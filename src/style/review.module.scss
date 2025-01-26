@@ -1,20 +1,20 @@
 .slider {
   position: relative;
   width: 100%;
-  padding: 4rem 12rem;
+  padding: 0rem 12rem 3rem;
   background: var(--background-review);
 
   border-bottom: 1px solid #373737;
 
   &__title {
-    font-size: 3rem;
+    font-size: var(--fz-sectionTitle-desktop);
     color: #fff;
     margin-bottom: 3rem;
     text-align: center;
   }
 
   &__subtitle {
-    font-size: 2rem;
+    font-size: var(--fz-text-desktop);
     color: #fff;
     margin-bottom: 5rem;
     text-align: center;
@@ -97,7 +97,7 @@
 
 @media (max-width: 768px) {
   .slider {
-    padding: 4rem 3rem;
+    padding: 2rem 3rem;
   }
 }
 

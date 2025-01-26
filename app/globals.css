@@ -14,13 +14,15 @@
   --title-black-color: #7c62ff;
   --title-white-color: #6445ff;
 
-  --fz-title-desktop: 3rem;
-  --fz-sectionTitle-desktop: 2rem;
+  --fz-title-desktop: 3.5rem;
+  --fz-sectionTitle-desktop: 2.2rem;
   --fz-text-desktop: 1.8rem;
 
-  --fz-title-mobile: 2.5rem;
-  --fz-sectionTitle-mobile: 2rem;
-  --fz-text-mobile: 1.6rem;
+  --fz-title-mobile: 3rem;
+  --fz-sectionTitle-mobile: 2.5rem;
+  --fz-text-mobile: 1.8rem;
+
+  --fz-title-form-desktop: 3rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -71,7 +73,7 @@ a {
   width: 100%;
   max-width: 140rem;
   margin: 0px auto;
-  padding: 5rem 4rem 1rem 4rem;
+  padding: 7rem 4rem 1rem 4rem;
 }
 
 .title-container {
