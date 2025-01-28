@@ -3,14 +3,16 @@
   width: 100%;
   padding: 0rem 12rem 3rem;
   background: var(--background-review);
-
+  z-index: 2;
   border-bottom: 1px solid #373737;
 
   &__title {
-    font-size: var(--fz-sectionTitle-desktop);
-    color: #fff;
-    margin-bottom: 3rem;
+    font-size: var(--fz-title-desktop);
+    color: var(--title-black-color);
     text-align: center;
+    border-bottom: 1px solid #4f4c567b;
+
+    padding: 0 5rem;
   }
 
   &__subtitle {

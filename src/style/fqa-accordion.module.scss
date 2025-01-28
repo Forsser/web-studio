@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding-top: 3rem;
   padding-bottom: 5rem;
+  z-index: 2;
 
   .title {
     text-align: center;
@@ -119,6 +120,11 @@
 }
 
 @media (max-width: 480px) {
+  .fqa {
+    .faqList {
+      width: 95%;
+    }
+  }
   .title {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;

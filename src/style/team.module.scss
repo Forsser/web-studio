@@ -1,6 +1,7 @@
 .team {
   position: relative;
   background: #ffffff;
+  z-index: 2;
 
   &__title {
     display: inline-block;

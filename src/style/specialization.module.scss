@@ -1,6 +1,7 @@
 .specialization {
   position: relative;
   background: #ffff;
+  z-index: 2;
 }
 
 .specialization__title {
@@ -39,7 +40,7 @@
   font-size: var(--fz-sectionTitle-desktop);
   font-weight: bold;
   text-transform: uppercase;
-  color: #0f100d;
+  color: var(--subtitle-white-color);
 }
 
 .item__container {

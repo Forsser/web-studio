@@ -28,7 +28,9 @@ export default function Review() {
   return (
     <section className={styles.slider}>
       <div className="container">
-        <h3 className={styles.slider__title}>Відгуки про нас</h3>
+        <div className="title-container">
+          <h3 className={styles.slider__title}>Відгуки про нас</h3>
+        </div>
 
         <h4 className={styles.slider__subtitle}>
           Відгуки – найважливіше для нас. Наш головний пріоритет – якість

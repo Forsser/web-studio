@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import style from "@/src/style/application-form.module.scss";
 import { toast } from "sonner";
 
@@ -41,55 +41,75 @@ const FormAplication = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState({});
   const [selectedOption, setSelectedOption] = useState("");
-
+  const [titleVisible, setTitleVisible] = useState(true);
+  const [displayedQuestion, setDisplayedQuestion] = useState(
+    questions[0].question
+  );
   const [contactInfo, setContactInfo] = useState({
     name: "",
     phone: "",
   });
 
-  const currentQuestion = questions[currentStep];
-
-  // Функція для перевірки валідності номера телефону (формат: +380123456789)
   const isValidPhoneNumber = (phone) => {
-    const phoneRegex = /^\+?\d{10,13}$/; // Дозволяє + і від 10 до 13 цифр
+    const phoneRegex = /^\+?\d{10,13}$/;
     return phoneRegex.test(phone);
   };
 
+  // Ефект для анімації зміни питання
+  useEffect(() => {
+    const updateQuestion = async () => {
+      if (currentStep <= questions.length - 1) {
+        // Спочатку ховаємо поточне питання
+        setTitleVisible(false);
+
+        // Чекаємо завершення анімації приховування
+        await new Promise((resolve) => setTimeout(resolve, 300));
+
+        // Оновлюємо текст питання
+        setDisplayedQuestion(questions[currentStep].question);
+
+        // Чекаємо один кадр для оновлення DOM
+        await new Promise((resolve) => setTimeout(resolve, 16));
+
+        // Показуємо нове питання
+        setTitleVisible(true);
+      } else {
+        // Для останнього кроку з контактами
+        setTitleVisible(false);
+        await new Promise((resolve) => setTimeout(resolve, 300));
+        setDisplayedQuestion("Залишіть ваші контакти і ми вас проконсультуємо");
+        await new Promise((resolve) => setTimeout(resolve, 16));
+        setTitleVisible(true);
+      }
+    };
+
+    updateQuestion();
+  }, [currentStep]);
+
   const handleOptionChange = (option) => {
     setSelectedOption(option);
-  };
 
-  const handleContactChange = (e) => {
-    const { name, value } = e.target; // Отримуємо name і value з input
-    setContactInfo((prev) => ({
-      ...prev, // Зберігаємо інші значення
-      [name]: value, // Оновлюємо лише поле з конкретним ім'ям
-    }));
-  };
-  const handleRadioChange = (e) => {
-    e.preventDefault();
-
-    if (currentStep >= questions.length) return;
-    // Перевіряємо, чи обрана відповідь
-    if (!selectedOption) {
-      toast.error("Будь ласка, оберіть варіант");
-      return;
-    }
-
-    // Зберігаємо відповідь поточного кроку
     const updatedFormData = {
       ...formData,
-      [currentQuestion.question]: selectedOption,
+      [questions[currentStep].question]: option,
     };
     setFormData(updatedFormData);
 
-    // Очищаємо вибір перед наступним питанням
-    setSelectedOption("");
+    // Затримка перед зміною кроку для завершення анімації вибору опції
+    setTimeout(() => {
+      if (currentStep < questions.length) {
+        setCurrentStep((prev) => prev + 1);
+        setSelectedOption("");
+      }
+    }, 100);
+  };
 
-    // Переходимо до наступного кроку
-    if (currentStep < questions.length) {
-      setCurrentStep((prevStep) => prevStep + 1);
-    }
+  const handleContactChange = (e) => {
+    const { name, value } = e.target;
+    setContactInfo((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -126,11 +146,13 @@ const FormAplication = () => {
           <p className={style.aplication__subtitle}>
             Пройдіть тест за 1 хвилину і ми допоможемо вам
           </p>
-          <form className={style.form} onSubmit={handleRadioChange}>
-            <p className={style.form__title}>
-              {currentStep > questions.length - 1
-                ? "Залишіть ваші контакти і ми вас проконсультуємо"
-                : `${currentQuestion.question}`}
+          <form className={style.form} onSubmit={(e) => e.preventDefault()}>
+            <p
+              className={`${style.form__title} ${
+                titleVisible ? style.visible : style.hidden
+              }`}
+            >
+              {displayedQuestion}
             </p>
 
             {currentStep > questions.length - 1 ? (
@@ -159,10 +181,17 @@ const FormAplication = () => {
                     }
                   />
                 </label>
+                <button
+                  type="button"
+                  className={style.form__button}
+                  onClick={handleSubmit}
+                >
+                  Завершити
+                </button>
               </div>
             ) : (
               <div className={style.form__input}>
-                {currentQuestion.options.map((option) => (
+                {questions[currentStep].options.map((option) => (
                   <label
                     key={option}
                     className={
@@ -173,7 +202,7 @@ const FormAplication = () => {
                   >
                     <input
                       type="radio"
-                      name={`question_${currentQuestion.id}`}
+                      name={`question_${questions[currentStep].id}`}
                       value={option}
                       checked={selectedOption === option}
                       onChange={() => handleOptionChange(option)}
@@ -182,43 +211,6 @@ const FormAplication = () => {
                   </label>
                 ))}
               </div>
-            )}
-            {/*             <div className={style.form__input}>
-              {currentQuestion.options.map((option) => (
-                <label
-                  key={option}
-                  className={
-                    selectedOption === option ? style.input__check : style.input
-                  }
-                >
-                  <input
-                    type="radio"
-                    name={`question_${currentQuestion.id}`}
-                    value={option}
-                    checked={selectedOption === option}
-                    onChange={() => handleOptionChange(option)}
-                  />
-                  {option}
-                </label>
-              ))}
-            </div> */}
-
-            {currentStep > questions.length - 1 ? (
-              <button
-                type="sumbit"
-                className={style.form__button}
-                onClick={handleSubmit}
-              >
-                Завершити
-              </button>
-            ) : (
-              <button
-                type="button"
-                className={style.form__button}
-                onClick={handleRadioChange}
-              >
-                Далі
-              </button>
             )}
           </form>
         </div>

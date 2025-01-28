@@ -1,7 +1,7 @@
 .problem {
   position: relative;
   color: aliceblue;
-
+  z-index: 2;
   border-bottom: 1px solid #373737;
 
   &__titleContainer {
@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8rem;
+    gap: 5rem;
 
     width: 100%;
     margin: 0px auto;
@@ -18,13 +18,13 @@
   &__mainTitle {
     display: inline-block;
     color: var(--title-black-color);
-    border-radius: 1rem;
-    box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(19, 19, 19, 0.551);
+
+    border-bottom: 1px solid #4f4c567b;
     padding: 0 5rem;
   }
 
   &__subTitle {
-    width: 65%;
+    width: 67%;
 
     font-size: var(--fz-sectionTitle-desktop);
     text-align: center;
@@ -33,7 +33,7 @@
     font-size: var(--fz-sectionTitle-desktop);
     text-align: center;
     padding: 0 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
 
   &__footerTitle {
@@ -56,7 +56,7 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    padding: 3rem 10rem;
+    padding: 0rem 10rem;
     width: 100%;
     /*   padding: 3rem 12vw; */
     gap: 2rem;
@@ -127,6 +127,7 @@
   border-bottom: 1px solid #4f4c567b;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+  color: var(--title-black-color);
 }
 .item__text {
   font-size: var(--fz-text-desktop);

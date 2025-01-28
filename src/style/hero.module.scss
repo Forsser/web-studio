@@ -1,6 +1,7 @@
 .hero {
+  position: relative;
   z-index: 2;
-  margin-top: 5rem;
+
   display: flex;
   flex-direction: column;
   padding-bottom: 5rem;
@@ -12,7 +13,7 @@
   justify-content: space-between;
   padding: 0 10rem;
   align-items: start;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .hero__title {
@@ -38,10 +39,10 @@
   display: inline-flex;
   align-items: end;
   font-size: var(--fz-sectionTitle-desktop);
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 1rem;
   backdrop-filter: blur(1rem);
-  border-radius: 1.5rem;
+
   border-bottom: 1px solid #292929;
 }
 

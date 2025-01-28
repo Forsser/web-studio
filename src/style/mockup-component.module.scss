@@ -7,11 +7,9 @@
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(0.5rem);
-
+  border-bottom: 1px solid #6439ff4a;
   padding: 1rem;
 
-  box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(217, 218, 216, 0.551);
-  border-radius: 1.5rem;
   width: 48%;
   height: auto;
 }
@@ -53,10 +51,10 @@
   transition: all 0.2s linear;
 
   &:hover {
-    color: #7270ff;
+    color: #474747;
   }
   &:active {
-    color: #7270ff;
+    color: #474747;
   }
 }
 

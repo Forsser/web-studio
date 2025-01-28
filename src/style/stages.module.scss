@@ -3,6 +3,7 @@
   background: #ffffff;
   /*   color: rgb(255, 191, 30);
  */
+  z-index: 2;
   height: 100%;
 
   &__title {
@@ -23,9 +24,9 @@
   justify-content: space-between;
   align-items: start;
   text-align: center;
-  padding: 40px;
+
   position: relative;
-  margin: 0 auto;
+  margin: 7rem auto 0 auto;
 }
 
 .step {
@@ -35,7 +36,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 200px;
+  max-width: 30rem;
 }
 
 .number {
@@ -71,47 +72,6 @@
   }
 }
 
-/* Лінія між етапами */
-.line {
-  position: absolute;
-
-  top: 50%;
-  left: 5rem;
-  width: 90%;
-  height: 0.1rem;
-  background-color: #9daefa35;
-  z-index: 1;
-}
-
-.line .pulse {
-  position: absolute;
-  top: -0.9rem;
-  left: 0;
-  width: 2rem;
-  height: 2rem;
-
-  background-color: rgba(119, 107, 251, 0.6);
-  box-shadow: 0px 0px 3.5rem 1.5rem rgba(73, 56, 255, 0.67);
-  border-radius: 50%;
-  animation: pulseLine 6s linear infinite;
-}
-
-@keyframes pulseLine {
-  0% {
-    transform: translateX(2rem);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(calc(65vw - 2rem)); /* Рух до кінця лінії */
-    opacity: 1;
-  }
-}
-
-/* Відсутність лінії після останнього етапу */
-.step:last-child .line {
-  display: none;
-}
-
 /* Для планшетів (екрани до 1024px) */
 @media (max-width: 1024px) {
   .stepsContainer {
@@ -128,10 +88,6 @@
   .number {
     font-size: 12rem;
     top: -5rem;
-  }
-
-  .line {
-    display: none;
   }
 }
 
@@ -153,19 +109,6 @@
   .number {
     font-size: 8rem;
     top: -4rem;
-  }
-
-  .line {
-    top: 120%;
-    left: 0;
-    width: 100%;
-    height: 0.2rem;
-  }
-
-  .line .pulse {
-    width: 1.2rem;
-    height: 1.2rem;
-    top: -0.5rem;
   }
 }
 
@@ -195,18 +138,5 @@
 
   .content__text {
     font-size: var(--fz-text-mobile);
-  }
-
-  .line {
-    top: 140%;
-    left: 0;
-    width: 100%;
-    height: 0.3rem;
-  }
-
-  .line .pulse {
-    width: 1rem;
-    height: 1rem;
-    top: -0.3rem;
   }
 }

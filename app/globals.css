@@ -14,6 +14,9 @@
   --title-black-color: #7c62ff;
   --title-white-color: #6445ff;
 
+  --subtitle-black-color: #6d7df5;
+  --subtitle-white-color: #3d3d3d;
+
   --fz-title-desktop: 3.5rem;
   --fz-sectionTitle-desktop: 2.2rem;
   --fz-text-desktop: 1.8rem;
@@ -22,7 +25,7 @@
   --fz-sectionTitle-mobile: 2rem;
   --fz-text-mobile: 1.6rem;
 
-  --fz-title-form-desktop: 3rem;
+  --fz-title-form-desktop: 1.8rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -67,6 +70,13 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.header__container {
+  width: 100%;
+  max-width: 140rem;
+  margin: 0px auto;
+  padding: 0rem 4rem 1rem 4rem;
 }
 
 .container {
@@ -133,6 +143,27 @@ a {
 /* Стиль повзунка при наведенні курсору */
 ::-webkit-scrollbar-thumb:hover {
   background: #0e0e0e; /* Темніший колір при наведенні */
+}
+
+/* Для екранів від 1400px до 1600px */
+@media (min-width: 1400px) and (max-width: 1600px) {
+  .container {
+    max-width: 1400px; /* Залишаємо ваші налаштування */
+  }
+}
+
+/* Для екранів від 1600px до 1800px */
+@media (min-width: 1600px) and (max-width: 1800px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+/* Для екранів ширше 1800px */
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1700px;
+  }
 }
 
 @media (max-width: 1024px) {

@@ -43,7 +43,7 @@ export default function ParticlesBckg() {
                 mode: "push",
               },
               onHover: {
-                enable: false,
+                enable: true,
                 mode: "repulse",
               },
               resize: true,
@@ -60,7 +60,7 @@ export default function ParticlesBckg() {
           },
           particles: {
             color: {
-              value: "#b9b3ff",
+              value: "#ffffff",
             },
 
             move: {
@@ -70,7 +70,7 @@ export default function ParticlesBckg() {
                 default: "bounce",
               },
               random: false,
-              speed: 1.5,
+              speed: 2,
               straight: false,
             },
             number: {
@@ -78,7 +78,7 @@ export default function ParticlesBckg() {
                 enable: true,
                 area: 800,
               },
-              value: 70,
+              value: 100,
             },
             opacity: {
               value: 1,
@@ -94,11 +94,11 @@ export default function ParticlesBckg() {
               type: "circle",
             },
             size: {
-              value: { min: 1, max: 3 },
+              value: { min: 0.5, max: 2 },
             },
             shadow: {
               enable: true, // Увімкнути тінь
-              color: "#444bff", // Колір тіні (також колір сяйва)
+              color: "#f8ffde", // Колір тіні (також колір сяйва)
               blur: 20, // Інтенсивність розмиття (розмір сяйва)
               offset: {
                 x: 0, // Зсув по X

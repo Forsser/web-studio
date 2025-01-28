@@ -22,15 +22,12 @@
     padding: 3rem 10rem;
 
     gap: 2rem;
-    color: rgb(73, 73, 73);
   }
 
   &__item {
     width: 48%;
     padding: 1rem;
-
-    border-radius: 1.5rem;
-    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem rgba(217, 218, 216, 0.551);
+    border-bottom: 1px solid #6439ff4a;
   }
 }
 
@@ -45,7 +42,7 @@
   font-family: sans-serif;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: #1b1b1b;
+  color: var(--subtitle-white-color);
   font-size: var(--fz-sectionTitle-desktop);
 
   border-radius: 1.5rem;
@@ -54,7 +51,7 @@
 .text__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   font-size: var(--fz-text-desktop);
 }
 

@@ -21,7 +21,7 @@ export default async function Hero() {
           </h1>
           <h2 className={style.hero__subtext}>
             <p> Зробимо найсильніший сайт у вашій ніші</p>
-            <img src={up.src} alt="arrow" className={style.hero__img} />
+            {/*  <img src={up.src} alt="arrow" className={style.hero__img} /> */}
           </h2>
         </div>
         <div className={style.hero__footer}>
