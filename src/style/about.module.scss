@@ -3,7 +3,7 @@
   width: 100%;
 
   z-index: 2;
-  background: #ffffff;
+  background: var(--background-review);
 
   &__title {
     display: inline-block;

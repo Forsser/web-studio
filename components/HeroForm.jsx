@@ -66,7 +66,6 @@ export default function HeroForm({ emailTo }) {
   return (
     <div className={style.form}>
       <div className={style.form__title}>
-        <p className={style.title__accent}>Обмежена знижка -20%</p>
         <p>
           Можемо взяти ще 2 проекти зі знижки -20%, поспішайте залишити заявку!
         </p>

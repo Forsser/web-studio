@@ -43,7 +43,7 @@ export default function ParticlesBckg() {
                 mode: "push",
               },
               onHover: {
-                enable: true,
+                enable: false,
                 mode: "repulse",
               },
               resize: true,
@@ -76,9 +76,9 @@ export default function ParticlesBckg() {
             number: {
               density: {
                 enable: true,
-                area: 800,
+                area: 900,
               },
-              value: 100,
+              value: 50,
             },
             opacity: {
               value: 1,
@@ -104,6 +104,13 @@ export default function ParticlesBckg() {
                 x: 0, // Зсув по X
                 y: 0, // Зсув по Y
               },
+            },
+            links: {
+              enable: true, // Включаємо лінії між точками
+              distance: 150, // Максимальна відстань для з'єднання
+              color: "#ffffff", // Колір ліній
+              opacity: 0.5, // Прозорість ліній
+              width: 1, // Товщина ліній
             },
           },
           detectRetina: true,

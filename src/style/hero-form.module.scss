@@ -1,8 +1,8 @@
 .form {
   position: relative;
   width: 45%;
-  height: 100%;
-  border: 1px solid #313131;
+  height: 60%;
+
   backdrop-filter: blur(0.5rem);
   border-radius: 2rem;
   padding: 2rem;
@@ -13,32 +13,30 @@
     font-size: var(--fz-sectionTitle-desktop);
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     color: #fffde6;
   }
 
   &__container {
-    margin-top: 3rem;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
     width: 100%;
-    gap: 3rem;
   }
 
   &__input {
-    border: 0.1rem solid #333333;
+    border-bottom: 0.1rem solid #fffde6;
     padding: 1rem;
-    border-radius: 1rem;
-    background: #0f0e0e;
+
     font-size: 1.4rem;
   }
 
   &__button {
     padding: 1rem;
-    border: 0.1rem solid #55151595;
+    border: 0.2rem solid #ba404095;
     border-radius: 1rem;
     font-size: var(--fz-text-desktop);
-    background: #f85114;
+
     color: #fffde6;
     cursor: pointer;
     font-weight: bold;
