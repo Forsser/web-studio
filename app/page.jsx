@@ -1,5 +1,6 @@
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
+import AboutPage from "@/pages/AboutPage";
 import Specialization from "@/components/Specialization";
 import Example from "@/components/Example";
 
@@ -10,14 +11,15 @@ import Steps from "@/components/Steps";
 import Team from "@/components/Team";
 import FAQAccordion from "@/components/FAQAccordion";
 import Advantages from "@/components/Advantages";
-import SpecializationPage from "@/components/SpecializationPage";
+import SpecializationPage from "@/pages/SpecializationPage";
 import Garant from "@/components/Garant";
+
 export default function Home() {
   return (
-    <>
+    <div>
       <Hero />
 
-      <About />
+      <AboutPage />
       <SpecializationPage />
       <Example />
 
@@ -28,6 +30,6 @@ export default function Home() {
       <Steps />
       <Team />
       <FAQAccordion />
-    </>
+    </div>
   );
 }

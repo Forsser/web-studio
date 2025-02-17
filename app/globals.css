@@ -1,27 +1,28 @@
 @import url(./normalize.css);
+
 :root {
+  background-color: #000000;
   --background: #000000;
 
   --background-white: #000000;
 
-  --background-hero: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  --background-hero: #000000;
 
   --background-card: #fdffbe38;
   --foreground-about: #1f1f1f;
 
   --background-review: #121212;
-  background-color: #ffffff;
 
   --background-btn: #f85114;
   --background-btn-hover: #ff1010dc;
 
-  --title-black-color: #7c62ff;
-  --title-white-color: #6445ff;
+  --title-black-color: #f9f9f0;
+  --title-white-color: #272727;
 
-  --subtitle-black-color: #6d7df5;
-  --subtitle-white-color: #3d3d3d;
+  --subtitle-black-color: #f4f4f4;
+  --subtitle-white-color: #222222;
 
-  --fz-title-desktop: 3.5rem;
+  --fz-title-desktop: 4.5rem;
   --fz-sectionTitle-desktop: 2rem;
   --fz-text-desktop: 1.8rem;
 
@@ -88,43 +89,29 @@ a {
   height: 100%;
   max-width: 140rem;
   margin: 0px auto;
-  padding: 7rem 4rem 1rem 4rem;
+  padding: 10rem 4rem 5rem 4rem;
 }
 
 .title-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   font-size: var(--fz-title-desktop);
-  font-weight: bold;
+
   text-transform: uppercase;
 
   margin: 0 auto;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .title-black-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 
-  text-align: center;
+  text-align: left;
   font-size: var(--fz-title-desktop);
-  font-weight: bold;
-  text-transform: uppercase;
 
-  margin: 0 auto;
-  margin-bottom: 3rem;
-}
-
-.gradient-title {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: normal;
-  padding: 0.5rem 2.5rem;
-  border-radius: 3rem;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent;
+  margin-bottom: 5rem;
 }
 
 /* Загальний стиль для скролбару */

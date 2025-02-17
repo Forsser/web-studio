@@ -3,36 +3,46 @@
 
   z-index: 2;
   border-bottom: 1px solid #373737;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/mask-2.png");
+    background-position: 5% 65%;
+    background-size: 30%;
+    background-repeat: no-repeat;
+  }
 
   &__titleContainer {
+    width: 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: left;
     justify-content: center;
     gap: 5rem;
-
-    width: 100%;
-    margin: 0px auto;
   }
 
   &__mainTitle {
     display: inline-block;
     color: var(--title-black-color);
-
-    border-bottom: 1px solid #4f4c567b;
-    padding: 0 5rem;
+    line-height: 1;
   }
 
   &__subTitle {
-    width: 67%;
-
+    width: 100%;
+    color: #8c8b8b;
     font-size: var(--fz-sectionTitle-desktop);
-    text-align: center;
+    text-align: left;
   }
   &__secondTitle {
     font-size: var(--fz-sectionTitle-desktop);
-    text-align: center;
-    padding: 0 1rem;
+    text-align: left;
+
     margin-bottom: 5rem;
   }
 
@@ -55,18 +65,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    padding: 0rem 10rem;
+    margin-top: 2rem;
     width: 100%;
-    /*   padding: 3rem 12vw; */
-    gap: 2rem;
-    color: rgb(255, 255, 255);
-    /* Властивості для картинки */
 
-    /*    background-image: url("/img/mask-1.png");
-    background-repeat: no-repeat; 
-    background-position: center calc(50% + 1.2rem); 
-    background-size: 18vw auto;  */
+    gap: 3rem;
+    color: rgb(255, 255, 255);
   }
 
   &__item {
@@ -75,15 +78,14 @@
     gap: 1rem;
     align-items: center;
     position: relative;
-    flex-basis: 48%;
-    min-height: 100%;
+    flex-basis: 100%;
+
     align-self: stretch;
-    padding: 2rem;
+    padding: 3rem;
     font-size: 2rem;
     backdrop-filter: blur(0.8rem);
     background-color: #20202066;
     border: 1px solid #40404000;
-    border-radius: 1rem;
   }
 
   &__svg {
@@ -114,6 +116,10 @@
   }
 }
 
+.problem__content {
+  display: flex;
+}
+
 .title__container {
   width: 100%;
   display: flex;
@@ -132,7 +138,7 @@
 .item__text {
   font-size: var(--fz-text-desktop);
   line-height: 3rem;
-  color: #cccccc;
+  color: #b1b1b1cc;
   border-radius: 1.5rem;
 }
 

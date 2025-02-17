@@ -4,7 +4,7 @@
   padding-top: 1rem;
   z-index: 5;
   position: relative;
-  background: #5ca0d4;
+  background: var(--background-white);
   &__burger {
     display: none; // Приховано за замовчуванням
   }
@@ -31,9 +31,9 @@
 
     gap: 5vw;
     backdrop-filter: blur(1rem);
-    border-radius: 1rem;
+
     padding: 1rem 3rem;
-    border-bottom: 1px solid #d5d5d5;
+    border-bottom: 1px solid #4f4f4f;
   }
 
   &__item {
@@ -42,7 +42,7 @@
     transition: all 0.2s linear;
 
     &:hover {
-      background: #525bd990;
+      background: #24242590;
       color: rgb(243, 243, 243);
     }
     &:active {

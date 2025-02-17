@@ -11,15 +11,17 @@
   overflow: hidden;
   background: var(--background-hero);
   width: 100%;
+  max-width: 140rem;
   height: 90vh;
   min-height: 60rem;
+  max-height: 60rem;
 }
 
 .hero__title {
-  width: 45%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  position: relative;
+
   text-transform: uppercase;
   text-align: center;
 
@@ -30,7 +32,6 @@
 }
 
 .hero__text {
-  font-weight: 600;
   display: flex;
   align-items: center;
   letter-spacing: 0.1rem;
@@ -46,16 +47,15 @@
 }
 .video__container {
   position: absolute;
-  top: 50%;
-  right: -6%;
-  transform: translateY(-50%);
-  width: 55%;
+  bottom: -0.7%;
+  right: 0;
+  /*   transform: translateY(-50%); */
+  width: 70%;
   height: auto;
 }
 .hero__video {
   width: 100%;
   height: auto;
-  border-radius: 3rem;
 }
 
 /* Для планшетів (екрани до 1024px) */

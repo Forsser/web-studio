@@ -1,0 +1,117 @@
+@charset "UTF-8";
+.header {
+  color: rgba(252, 252, 252, 0.69);
+  font-weight: 500;
+  padding-top: 1rem;
+  z-index: 5;
+  position: relative;
+  background: var(--background-white);
+}
+.header__burger {
+  display: none;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--fz-text-desktop);
+  justify-content: space-between;
+}
+
+.navigation {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5vw;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  padding: 1rem 3rem;
+  border-bottom: 1px solid #4f4f4f;
+}
+.navigation__item {
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+}
+.navigation__item:hover {
+  background: rgba(36, 36, 37, 0.5647058824);
+  color: rgb(243, 243, 243);
+}
+.navigation__item:active {
+  background: rgba(35, 35, 35, 0.5647058824);
+  color: rgb(243, 243, 243);
+}
+.navigation__item:focus {
+  background: rgba(35, 35, 35, 0.5647058824);
+  color: rgb(243, 243, 243);
+}
+
+.contacts__info {
+  font-size: var(--fz-text-desktop);
+}
+
+.logo {
+  width: 10%;
+  z-index: 1001;
+}
+
+/* Для планшетів (екрани до 1024px) */
+@media (max-width: 1024px) {
+  .header__burger {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header__navigation, .header__contacts {
+    display: none;
+  }
+  .header__container {
+    flex-direction: row; /* Перехід на стовпчик */
+    font-size: 1.8rem; /* Зменшення розміру шрифтів */
+  }
+  .navigation {
+    justify-content: flex-end;
+  }
+  .navigation__list {
+    flex-direction: column; /* Елементи навігації в стовпчик */
+    gap: 3rem;
+    align-items: center;
+  }
+  .contacts__info {
+    gap: 2rem;
+    align-items: center;
+  }
+}
+/* Для мобільних пристроїв (екрани до 768px) */
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: row;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+  }
+  .navigation__list {
+    gap: 2rem;
+  }
+  .contacts__info {
+    gap: 1.5rem;
+  }
+}
+/* Для дуже маленьких екранів (екрани до 480px) */
+@media (max-width: 480px) {
+  .header__container {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+  }
+  .navigation__list {
+    gap: 1.5rem;
+  }
+  .contacts__info {
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=page.module.css.map */

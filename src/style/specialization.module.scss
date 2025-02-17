@@ -1,12 +1,12 @@
 .specialization {
   position: relative;
-  background: #ffff;
+  background: rgb(255, 255, 255);
   z-index: 2;
 }
 
 .specialization__title {
   display: inline-block;
-  box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(217, 218, 216, 0.551);
+  /*   box-shadow: 0.2rem 0.5rem 1rem 0.2rem rgba(217, 218, 216, 0.551); */
   color: var(--title-white-color);
   border-radius: 1rem;
   text-align: center;

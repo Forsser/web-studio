@@ -1,0 +1,13 @@
+/* styles/smoothScroll.scss */
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+#smooth-wrapper {
+  min-height: 100vh;
+}
+
+#smooth-content {
+  position: relative;
+  z-index: 1;
+}
